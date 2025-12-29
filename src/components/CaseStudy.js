@@ -87,10 +87,6 @@ const CaseStudy = () => {
             src="/assets/casestudy.webp"
             alt="AI Network Background"
             className="w-full h-full object-cover transition-transform duration-700"
-            // onError={(e) => {
-            //   e.target.onerror = null; 
-            //   e.target.src='https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2070&auto=format&fit=crop';
-            // }}
           />
 
           {/* Center Text Overlay */}

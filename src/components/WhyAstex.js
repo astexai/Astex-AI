@@ -122,21 +122,21 @@ const WhyAstex = () => {
                 border-r border-b border-[#d9d9d9] 
                 flex flex-col items-start 
                 transition-colors duration-300
-                ${item.isHighlight ? 'bg-[#fffbf5]' : 'bg-white hover:bg-gray-50'}
+                ${item.isHighlight ? 'bg-white hover:bg-[#e77d00]/6 hover:text-[#f7941d]' : 'bg-white hover:bg-[#e77d00]/6 hover:text-[#f7941d]'}
               `}
             >
               {/* Icon Box */}
               <div className="w-[48px] h-[48px] mb-[25px]">
-                {item.icon}
+                {item.icon} 
               </div>
 
               {/* Title */}
-              <h3 className={`text-[20px] font-medium mb-[15px] ${item.isHighlight ? 'text-[#f7941d]' : 'text-[#111]'}`}>
+              <h3 className="text-[20px] font-medium mb-[15px]">
                 {item.title}
               </h3>
 
               {/* Description */}
-              <p className={`text-[16px] leading-[1.6] ${item.isHighlight ? 'text-[#d68324]' : 'text-[#555]'}`}>
+              <p className="text-[16px] leading-[1.6]">
                 {item.desc}
               </p>
             </div>
