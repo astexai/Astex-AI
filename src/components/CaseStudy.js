@@ -84,7 +84,7 @@ const CaseStudy = () => {
 
           {/* Image */}
           <img 
-            src="https://media.canva.com/v2/files/uri:ifs%3A%2F%2FM%2F94f5aaa9-0c73-4f7f-bbd2-35aa042c9c23?csig=AAAAAAAAAAAAAAAAAAAAAHUAdoUIhdbm4BNZ41Faxd5zltWue1_7xYxsM4cdvSZC&exp=1767011002&signer=media-rpc&token=AAIAAU0AJDk0ZjVhYWE5LTBjNzMtNGY3Zi1iYmQyLTM1YWEwNDJjOWMyMwAAAAABm2oQJpD6YBB3AClNUtC90zfXitUI4DqzbM1v1z2IdN9jKyqNBQ"
+            src="/assets/casestudy.webp"
             alt="AI Network Background"
             className="w-full h-full object-cover transition-transform duration-700"
             // onError={(e) => {

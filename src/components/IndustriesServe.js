@@ -2,6 +2,7 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 
+
 const IndustriesServe = () => {
   // --- Data ---
   const industries = [
@@ -207,15 +208,28 @@ const IndustriesServe = () => {
     }, 300);
   };
 
+
+  const firstLoad = useRef(true);
+  
+
   // Scroll active tab into view
-  useEffect(() => {
-    if (tabsRef.current) {
-      const activeTab = tabsRef.current.children[currentIndex];
-      if (activeTab) {
-        activeTab.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
-      }
+ useEffect(() => {
+  if (firstLoad.current) {
+    firstLoad.current = false;
+    return; // ❌ Skip scrolling on initial page load
+  }
+
+  if (tabsRef.current) {
+    const activeTab = tabsRef.current.children[currentIndex];
+    if (activeTab) {
+      activeTab.scrollIntoView({
+        behavior: 'smooth',
+        block: 'nearest',
+        inline: 'center',
+      });
     }
-  }, [currentIndex]);
+  }
+}, [currentIndex]);
 
   // Drag Scroll Handlers
   const handleMouseDown = (e) => {
