@@ -16,7 +16,7 @@ import Footer from "@/components/Footer";
 export default function Home() {
   return (
    <>
-   <Navbar />
+   {/* <Navbar /> */}
    <Hero />
    <OurServices />
    <WhyAstex />
@@ -28,7 +28,7 @@ export default function Home() {
    <Blogs />
    <FinalCta />
    <ContactUs />
-   <Footer />
+   {/* <Footer /> */}
    </>
   );
 }
