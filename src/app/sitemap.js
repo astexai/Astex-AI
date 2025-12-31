@@ -8,7 +8,7 @@ export default function sitemap() {
     { url: `${baseUrl}/company/about-us`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
     { url: `${baseUrl}/company/contacts`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
     { url: `${baseUrl}/company/testimonials`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
-    { url: `${baseUrl}/company/blogs-&-insights`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },
+    // { url: `${baseUrl}/company/blogs-&-insights`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },
 
     // Services
     { url: `${baseUrl}/services/ai-agent-development`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
