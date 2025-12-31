@@ -7,7 +7,7 @@ import Footer from '@/components/Footer';
 const NotFound = () => {
   return (
     <>
-    <Navbar />
+    {/* <Navbar /> */}
     <div className="relative min-h-screen w-full bg-white flex flex-col items-center justify-center overflow-hidden font-inter text-[#111]">
 
       {/* 1. Subtle Background Grid (Pure CSS) */}
@@ -20,7 +20,7 @@ const NotFound = () => {
       ></div>
 
       {/* 2. Main Content */}
-      <div className="relative z-10 flex -mt-24 flex-col items-center text-center px-5 max-w-4xl mx-auto">
+      <div className="relative z-10 flex -mt-36 flex-col items-center text-center px-5 max-w-4xl mx-auto">
 
         {/* CSS-Only Animated AI Icon */}
         <div className="relative w-32 h-32 mb-8 flex items-center justify-center">
@@ -42,14 +42,14 @@ const NotFound = () => {
 
         {/* Headline */}
         <h1 className="text-4xl md:text-6xl lg:text-6xl font-medium mb-6 leading-[1.1] tracking-tight">
-          Something extraordinary <br className="hidden md:block" />
-          is in the <span className="text-[#e77d00]">works.</span>
+         We’re Giving  <br className="hidden md:block" />
+          Our Site a <span className="text-[#e77d00]">Quick Upgrade.</span>
         </h1>
 
         {/* Subtext */}
-        <p className="text-lg md:text-xl text-[#666] max-w-xl mb-12 leading-relaxed">
-          We are currently crafting a new intelligent experience. <br className="hidden md:block" />
-          Please check back soon for the future of AI automation.
+        <p className="text-lg md:text-xl text-[#666] max-w-2xl mb-12 leading-relaxed">
+         Something awesome is on the way! We’re performing essential maintenance to bring you a better, faster experience.  <br className="hidden md:block" />
+          We’ll be back online shortly. Thank you for your patience.
         </p>
 
         {/* Simple Button */}
@@ -62,7 +62,7 @@ const NotFound = () => {
       </div>
 
     </div>
-    <Footer />
+    {/* <Footer /> */}
     </>
   );
 };
