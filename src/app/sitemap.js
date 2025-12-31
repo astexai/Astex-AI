@@ -1,16 +1,16 @@
-export default function sitemap(): MetadataRoute.Sitemap {
+export default function sitemap() {
   const baseUrl = "https://www.astexai.in";
 
   return [
     { url: `${baseUrl}/`, lastModified: new Date(), changeFrequency: "weekly", priority: 1 },
 
-    // Company Pages
+    // Company pages
     { url: `${baseUrl}/company/about-us`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
     { url: `${baseUrl}/company/contacts`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
     { url: `${baseUrl}/company/testimonials`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/company/blogs-&-insights`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },
 
-    // Services Pages
+    // Services
     { url: `${baseUrl}/services/ai-agent-development`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
     { url: `${baseUrl}/services/chatbot-voicebots`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
     { url: `${baseUrl}/services/workflow-automation`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
@@ -25,7 +25,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/services/rag-assistants`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
     { url: `${baseUrl}/services/dashboard-portals`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
 
-    // AI Solutions Pages
+    // AI Solutions
     { url: `${baseUrl}/ai-solutions/healthcare`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/ai-solutions/restaurants`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/ai-solutions/hr`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
