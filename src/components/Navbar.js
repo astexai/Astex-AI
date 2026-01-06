@@ -102,45 +102,45 @@ const Navbar = () => {
         { 
           title: "", 
           items: [
-            { name: "E-Commerce", url: "/industries/ecommerce" },
-            { name: "Travel & Hospitality", url: "/industries/travel-hospitality" },
-            { name: "Healthcare Clinics", url: "/industries/healthcare" },
-            { name: "Real Estate", url: "/industries/real-estate" },
-            { name: "Education Institutes", url: "/industries/education" },
-            { name: "SaaS Companies", url: "/industries/saas" }
+            { name: "E-Commerce", url: "#" },
+            { name: "Travel & Hospitality", url: "#" },
+            { name: "Healthcare Clinics", url: "#" },
+            { name: "Real Estate", url: "#" },
+            { name: "Education Institutes", url: "#" },
+            { name: "SaaS Companies", url: "#" }
           ]
         },
         { 
           title: "", 
           items: [
-            { name: "Marketing Agencies", url: "/industries/marketing-agencies" },
-            { name: "Restaurants & Cafes", url: "/industries/restaurants" },
-            { name: "Logistics & Supply", url: "/industries/logistics" },
-            { name: "FinTech Services", url: "/industries/fintech" },
-            { name: "Retail Stores", url: "/industries/retail" },
-            { name: "Manufacturing Units", url: "/industries/manufacturing" }
+            { name: "Marketing Agencies", url: "#" },
+            { name: "Restaurants & Cafes", url: "#" },
+            { name: "Logistics & Supply", url: "#" },
+            { name: "FinTech Services", url: "#" },
+            { name: "Retail Stores", url: "#" },
+            { name: "Manufacturing Units", url: "#" }
           ]
         },
         { 
           title: "", 
           items: [
-            { name: "Event Management", url: "/industries/event-management" },
-            { name: "Coaching Centers", url: "/industries/coaching" },
-            { name: "HR & Staffing", url: "/industries/hr-staffing" },
-            { name: "IT Services", url: "/industries/it-services" },
-            { name: "Consulting Firms", url: "/industries/consulting" },
-            { name: "Automobile Dealers", url: "/industries/automobile" }
+            { name: "Event Management", url: "#" },
+            { name: "Coaching Centers", url: "#" },
+            { name: "HR & Staffing", url: "#" },
+            { name: "IT Services", url: "#" },
+            { name: "Consulting Firms", url: "#" },
+            { name: "Automobile Dealers", url: "#" }
           ]
         },
         { 
           title: "", 
           items: [
-            { name: "Fitness & Gyms", url: "/industries/fitness" },
-            { name: "Legal Services", url: "/industries/legal" },
-            { name: "Banking Support", url: "/industries/banking" },
-            { name: "Insurance Services", url: "/industries/insurance" },
-            { name: "Media & Creators", url: "/industries/media" },
-            { name: "Startup Founders", url: "/industries/startups" }
+            { name: "Fitness & Gyms", url: "#" },
+            { name: "Legal Services", url: "#" },
+            { name: "Banking Support", url: "#" },
+            { name: "Insurance Services", url: "#" },
+            { name: "Media & Creators", url: "#" },
+            { name: "Startup Founders", url: "#" }
           ]
         }
       ]
