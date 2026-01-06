@@ -15,18 +15,18 @@ const Navbar = () => {
       imageColor: "bg-blue-600",
       imageUrl: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=600&auto=format&fit=crop",
       items: [
-        { name: "E-Commerce & D2C", url: "/ai-solutions/ecommerce-d2c" },
+        { name: "E-Commerce & D2C", url: "/ai-solutions/e-commerce-d2c" },
         { name: "Travel & Hospitality", url: "/ai-solutions/travel-hospitality" },
-        { name: "Healthcare & Clinics", url: "/ai-solutions/healthcare" },
-        { name: "Ed-Tech & Coaching Institutes", url: "/ai-solutions/edtech" },
-        { name: "Real Estate & Property", url: "/ai-solutions/real-estate" },
-        { name: "Finance, Banking & FinTech", url: "/ai-solutions/finance" },
-        { name: "Restaurants & Cafes", url: "/ai-solutions/restaurants" },
-        { name: "SaaS & Software Companies", url: "/ai-solutions/saas" },
-        { name: "Marketing Agencies & Service Businesses", url: "/ai-solutions/marketing" },
-        { name: "Logistics & Supply Chain", url: "/ai-solutions/logistics" },
-        { name: "HR, Recruitment & Staffing", url: "/ai-solutions/hr" },
-        { name: "Education Institutes & Universities", url: "/ai-solutions/education" }
+        { name: "Healthcare & Clinics", url: "/ai-solutions/healthcare-clinics" },
+        { name: "Ed-Tech & Coaching Institutes", url: "/ai-solutions/ed-tech-coaching-institutes" },
+        { name: "Real Estate & Property", url: "/ai-solutions/real-estate-property" },
+        { name: "Finance, Banking & FinTech", url: "/ai-solutions/finance-banking-fintech" },
+        { name: "Restaurants & Cafes", url: "/ai-solutions/restaurants-cafes" },
+        { name: "SaaS & Software Companies", url: "/ai-solutions/saas-software-companies" },
+        { name: "Marketing Agencies & Service Businesses", url: "/ai-solutions/marketing-agencies-service-businesses" },
+        { name: "Logistics & Supply Chain", url: "/ai-solutions/logistics-supply-chain" },
+        { name: "HR, Recruitment & Staffing", url: "/ai-solutions/hr-recruitment-staffing" },
+        { name: "Education Institutes & Universities", url: "/ai-solutions/education-institutes-universities" }
       ]
     },
     "Services": {
@@ -35,60 +35,61 @@ const Navbar = () => {
       imageDesc: "Comprehensive AI services from development to integration and product engineering.",
       imageColor: "bg-[#ff4d4d]",
       imageUrl: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=600&auto=format&fit=crop",
-      columns: [
-        {
-          title: "AI & Automation",
-          items: [
-            { name: "AI Agent Development", url: "/services/ai-agent-development" },
-            { name: "Chatbot & Voicebots", url: "/services/chatbot-voicebots" },
-            { name: "Workflow Automation Systems", url: "/services/workflow-automation" },
-            { name: "WhatsApp Automation Tools", url: "/services/whatsapp-automation" },
-            { name: "CRM Process Automation", url: "/services/crm-automation" },
-            { name: "Email Automation Flows", url: "/services/email-automation" },
-            { name: "Data Insight Agents", url: "/services/data-insight-agents" },
-            { name: "Document QA Bots", url: "/services/document-qa-bots" }
-          ]
-        },
-        {
-          title: "AI Products & Intelligence",
-          items: [
-            { name: "Custom AI Products", url: "/services/custom-ai-products" },
-            { name: "AI Copilot Solutions", url: "/services/ai-copilot" },
-            { name: "Conversational AI Design", url: "/services/conversational-ai" },
-            { name: "Multi-Agent Workflows", url: "/services/multi-agent-workflows" },
-            { name: "Predictive Automation Tools", url: "/services/predictive-automation" },
-            { name: "RAG Knowledge Assistants", url: "/services/rag-assistants" },
-            { name: "AI Analytics Agents", url: "/services/ai-analytics" },
-            { name: "Domain AI Solutions", url: "/services/domain-ai" }
-          ]
-        },
-        {
-          title: "Integrations & Engineering",
-          items: [
-            { name: "API & Webhooks", url: "/services/api-webhooks" },
-            { name: "Automation Platform Integrations", url: "/services/automation-integrations" },
-            { name: "CRM SaaS Integrations", url: "/services/crm-integrations" },
-            { name: "Backend Data Automations", url: "/services/backend-automations" },
-            { name: "Lead Data Pipelines", url: "/services/lead-pipelines" },
-            { name: "Voice-to-CRM Sync", url: "/services/voice-crm-sync" },
-            { name: "Chatbot Data Sync", url: "/services/chatbot-data-sync" },
-            { name: "Dashboard Integrations", url: "/services/dashboard-integrations" }
-          ]
-        },
-        {
-          title: "Product Development & Platforms",
-          items: [
-            { name: "Web App Development", url: "/services/web-app-development" },
-            { name: "SaaS Product Development", url: "/services/saas-development" },
-            { name: "PoC Development Support", url: "/services/poc-development" },
-            { name: "Dashboard & Portals", url: "/services/dashboard-portals" },
-            { name: "Backend API Development", url: "/services/backend-api" },
-            { name: "Realtime System Integrations", url: "/services/realtime-integrations" },
-            { name: "Cloud Deployment Setup", url: "/services/cloud-deployment" },
-            { name: "Product Maintenance Support", url: "/services/maintenance-support" }
-          ]
-        }
-      ]
+     columns: [
+  {
+    title: "AI & Automation",
+    items: [
+      { name: "AI Agent Development", url: "/services/ai-agent-development" },
+      { name: "Chatbot & Voicebots", url: "/services/chatbot-voicebots" },
+      { name: "Workflow Automation Systems", url: "/services/workflow-automation-systems" },
+      { name: "WhatsApp Automation Tools", url: "/services/whatsapp-automation-tools" },
+      { name: "CRM Process Automation", url: "/services/crm-process-automation" },
+      { name: "Email Automation Flows", url: "/services/email-automation-flows" },
+      { name: "Data Insight Agents", url: "/services/data-insight-agents" },
+      { name: "Document QA Bots", url: "/services/document-qa-bots" }
+    ]
+  },
+  {
+    title: "AI Products & Intelligence",
+    items: [
+      { name: "Custom AI Products", url: "/services/custom-ai-products" },
+      // { name: "AI Copilot Solutions", url: "/services/ai-copilot" }, // not created
+      { name: "Conversational AI Design", url: "/services/conversational-ai-design" },
+      { name: "Multi-Agent Workflows", url: "/services/multi-agent-workflows" },
+      { name: "Predictive Automation Tools", url: "/services/predictive-automation-tools" },
+      { name: "RAG Knowledge Assistants", url: "/services/rag-knowledge-assistants" },
+      { name: "AI Analytics Agents", url: "/services/ai-analytics-agents" },
+      { name: "Domain AI Solutions", url: "/services/domain-ai-solutions" }
+    ]
+  },
+  {
+    title: "Integrations & Engineering",
+    items: [
+      { name: "API & Webhooks", url: "/services/api-and-webhooks" },
+      { name: "Automation Platform Integrations", url: "/services/automation-platform-integrations" },
+      { name: "CRM SaaS Integrations", url: "/services/crm-saas-integrations" },
+      { name: "Backend Data Automations", url: "/services/backend-data-automations" },
+      { name: "Lead Data Pipelines", url: "/services/lead-data-pipelines" },
+      { name: "Voice-to-CRM Sync", url: "/services/voice-to-crm-sync" },
+      { name: "Chatbot Data Sync", url: "/services/chatbot-data-sync" },
+      { name: "Dashboard Integrations", url: "/services/dashboard-integrations" }
+    ]
+  },
+  {
+    title: "Product Development & Platforms",
+    items: [
+      { name: "Web App Development", url: "/services/web-app-development" },
+      { name: "SaaS Product Development", url: "/services/saas-product-development" },
+      // { name: "PoC Development Support", url: "/services/poc-development" }, // not created
+      { name: "Dashboard & Portals", url: "/services/dashboard-and-portals" },
+      { name: "Backend API Development", url: "/services/backend-api-development" },
+      // { name: "Realtime System Integrations", url: "/services/realtime-integrations" }, // not created
+      // { name: "Cloud Deployment Setup", url: "/services/cloud-deployment" }, // not created
+      { name: "Product Maintenance Support", url: "/services/product-maintenance-support" }
+    ]
+  }
+]
+
     },
     "Case Studies": { type: "link", href: "/case-studies" },
     "Industries": {
@@ -153,9 +154,9 @@ const Navbar = () => {
       items: [
         { name: "About Us", url: "/company/about-us" },
         { name: "Testimonials", url: "/company/testimonials" },
-        { name: "Team", url: "/company/team" },
+        { name: "Leadership", url: "/company/leadership" },
         { name: "Blogs & Insights", url: "/company/blogs-&-insights" },
-        { name: "Contacts", url: "/company/contacts" },
+        { name: "Contacts", url: "/company/contact-us" },
       ]
     }
   };

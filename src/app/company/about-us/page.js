@@ -277,7 +277,7 @@ export default function AboutUs() {
 
             {/* --- Section 3: Evolution Timeline (Carousel Style) --- */}
             <section className="pt-20 md:pt-30 pb-4 md:pb-18 max-w-[1400px] border-x border-[#d9d9d9] mx-auto px-4 sm:px-6">
-                <h2 className="text-4xl text-center md:text-left md:text-6xl font-medium text-black mb-2">
+                <h2 className="text-4xl md:text-6xl text-center md:text-left font-medium text-black mb-2">
                     The Astex<span className="text-[#e77d00]">ai</span> evolution:
                 </h2>
                 <p className="text-gray-600 mb-0 md:mb-12 text-center md:text-left  text-lg">Our failure to success story.</p>

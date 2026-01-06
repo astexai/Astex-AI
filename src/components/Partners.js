@@ -2,8 +2,8 @@ import React from 'react';
 
 const Partners = () => {
   return (
-    <section className="w-full bg-white px-5 font-inter">
-      <div className="max-w-[1400px] py-20  border-x border-[#d9d9d9] mx-auto text-center">
+    <section className="w-full bg-white px-5">
+      <div className="max-w-[1400px] py-20 border-x border-[#d9d9d9] mx-auto text-center">
         
         {/* Header */}
         <h2 className="text-[32px] md:text-[45px] font-medium text-black mb-10">
