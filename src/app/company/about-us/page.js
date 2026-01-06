@@ -1,8 +1,7 @@
-
 'use client';
 import React, { useRef, useState, useEffect } from 'react';
 import Head from 'next/head';
-import ContactUs from '@/components/ContactUs';
+import ContactUs from '@/components/ContactUs'; // Ensure path is correct
 
 // --- Icons (Inline SVGs) ---
 const Icons = {
@@ -54,122 +53,131 @@ const Icons = {
     )
 };
 
-// --- Timeline Data ---
+// --- Timeline Data (Updated with Astex AI Story) ---
 const timelineData = [
     {
-        year: "2021",
-        title: "The Beginning",
-        description: "Started as Astex Labs in Bangalore focused on Machine Learning models. The initial product was promising but lacked enterprise integration. We pivoted on November 8th, 2021."
+        year: "Oct 2024",
+        title: "The Inception",
+        description: "Founded Astex AI with a singular vision: to democratize intelligence. We started by building proprietary RAG pipelines and foundational automation frameworks."
     },
     {
-        year: "2022",
-        title: "Building Foundation",
-        description: "Invested heavily in R&D for Large Language Models. Built our proprietary orchestration engine. We lost some time iterating, but gained a robust foundation for future scale."
+        year: "Jan 2025",
+        title: "Strategic Alliance",
+        description: "Partnered with Tuleip AI to co-engineer next-gen AI Agents. This collaboration accelerated our capabilities in multi-agent orchestration and complex reasoning tasks."
     },
     {
-        year: "2023",
-        title: "AI Agent Breakthrough",
-        description: "Launched our first autonomous CRM bot. Generated 2x revenue for our first US-based client. COVID after-effects impacted global business, but we automated our way through."
+        year: "Apr 2025",
+        title: "First Development Milestone",
+        description: "Secured and kicked off our first major custom development project. Successfully deployed a hybrid LLM solution for a mid-sized Logistics firm."
     },
     {
-        year: "2025",
-        title: "Global Scale",
-        description: "Generated 3x revenue for enterprise clients. Expanded to US & Europe. Partnered with major tech companies. Growing team of 70+ engineers with 99.9% uptime."
+        year: "July 2025",
+        title: "Scaling Operations",
+        description: "Landed our second major development contract. Expanded our engineering team and optimized our deployment cycles to handle concurrent enterprise workflows."
+    },
+    {
+        year: "Aug 2025",
+        title: "Agentic Breakthrough",
+        description: "Launched our 3rd major project focused purely on Autonomous AI Agents. This marked our shift from 'Automation' to 'Cognitive Agents' that plan and execute tasks independently."
+    },
+    {
+        year: "Dec 2025",
+        title: "Rapid Growth",
+        description: "Completed 10+ AI Agent deployments and 30+ custom development projects. Surpassed $300K+ in revenue, establishing Astex AI as a premier player in the automation space."
     }
 ];
 
-// --- Process / Proven Path Data for Mobile Slider ---
+// --- Process / Proven Path Data (Updated for AI Agents) ---
 const provenPathData = [
     {
-        title: "Strategy & Design",
+        title: "Discovery & Strategy",
         icon: (
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6 text-white">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
             </svg>
         ),
         points: [
-            "Define success and engagement goals",
-            "Ideate user stories, personas, & features",
-            "Create optimized bot content",
-            "Design tested & proven bot flows"
+            "Analyze current workflow bottlenecks",
+            "Define AI Agent personas & KPIs",
+            "Map data sources & API endpoints",
+            "Architect the automation blueprint"
         ]
     },
     {
-        title: "Development",
+        title: "Agent Development",
         icon: (
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6 text-white">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75" />
             </svg>
         ),
         points: [
-            "Build complex integrations",
-            "Add bot intelligence using NLP",
-            "Cross-channel capable implementations",
-            "Custom CMS implementation"
+            "Build custom LLM chains (LangChain)",
+            "Integrate Vector Databases (RAG)",
+            "Develop function-calling capabilities",
+            "Ensure enterprise-grade security"
         ]
     },
     {
-        title: "Drive Further Engagement",
+        title: "Orchestration & Scale",
         icon: (
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6 text-white">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
             </svg>
         ),
         points: [
-            "Extend complex inquiry capabilities",
-            "Advanced audience segmentation",
-            "Data-driven ROI measurement",
-            "Voice experience capabilities"
+            "Deploy Multi-Agent Systems",
+            "Implement Human-in-the-loop (HITL)",
+            "Connect to CRMs, ERPs, & Slack",
+            "Real-time performance monitoring"
         ]
     },
     {
-        title: "Launch & Improve",
+        title: "Optimization",
         icon: (
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6 text-white">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
             </svg>
         ),
         points: [
-            "Robust analytics capabilities",
-            "Bot A/B testing",
-            "Dedicated Support team",
-            "AM team drives new bot features"
+            "Prompt Engineering refinement",
+            "Reduction in token costs",
+            "Latency optimization",
+            "Continuous model fine-tuning"
         ]
     }
 ];
 
-// --- Accomplishments Data (Added for Slider) ---
+// --- Accomplishments Data (Updated with AI/Automation Context) ---
 const accomplishmentsData = [
     {
-        quote: "Special thanks to the Astex AI Team who have implemented the Agent Console. The process has been flexible, helpful and professional, going the extra mile to implement changes and fix issues during the testing phase.",
-        name: "Andreas Soellner",
-        role: "CTO, TechCorp",
-        img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop"
+        quote: "Astex AI transformed our customer support. Their agents handle 80% of our queries autonomously, saving us hours daily. The transition was seamless.",
+        name: "James Carter",
+        role: "COO, Nexus Logistics",
+        img: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100&h=100&fit=crop"
     },
     {
-        quote: "Astex AI not only provides extremely helpful chatbot features but also goes above and beyond to improve the user experience. Their services have had a significantly positive impact on the business.",
-        name: "Manager of Engagement",
-        role: "Aveda Global",
-        img: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop"
-    },
-    {
-        quote: "Astex worked on a tight turn-around, was extremely helpful and professional in developing all components of the project up to the brand's high standards.",
-        name: "Axelle Basso",
-        role: "Director, Luxe Beauty",
+        quote: "We needed a custom solution to automate our lead qualification. Astex delivered a system that not only qualifies leads but schedules meetings automatically.",
+        name: "Elena Rodriguez",
+        role: "Head of Sales, FinTech Pro",
         img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&h=100&fit=crop"
     },
-    // Added duplicates so the slider has enough content to slide on PC
     {
-        quote: "The strategic insights provided by the team were invaluable. We saw an immediate uptick in customer retention after implementing their solutions.",
-        name: "Sarah Jenkins",
-        role: "VP Marketing, Spherix",
-        img: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=100&h=100&fit=crop"
+        quote: "The team at Astex AI understands the nuances of LLMs. They didn't just give us a chatbot; they gave us a reasoning engine that integrates with our ERP.",
+        name: "Michael Chen",
+        role: "CTO, Spherix Data",
+        img: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop"
     },
     {
-        quote: "Professionalism at its finest. They understood our complex requirements and delivered a solution that scaled perfectly with our growth.",
-        name: "David Chen",
-        role: "Head of Product, Innovate",
-        img: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop"
+        quote: "Their 'No fluff' approach is refreshing. They audited our workflows, identified the bottlenecks, and deployed agents that actually work in production.",
+        name: "Sarah Jenkins",
+        role: "VP Operations, OmniRetail",
+        img: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100&h=100&fit=crop"
+    },
+    {
+        quote: "Astex AI helped us scale our content operations by 10x using autonomous drafting agents. Highly professional and technically sound.",
+        name: "David Ross",
+        role: "Founder, MediaFlow",
+        img: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=100&h=100&fit=crop"
     }
 ];
 
@@ -223,8 +231,6 @@ export default function AboutUs() {
     const handleScroll = () => {
         if (accomplishmentsRef.current) {
             const container = accomplishmentsRef.current;
-            // Determine active slide index based on scroll position and item width
-            // This works well for mobile (1 item) and gives a rough estimate for desktop
             const cardWidth = container.children[0].offsetWidth;
             const index = Math.round(container.scrollLeft / cardWidth);
             setActiveSlide(index);
@@ -233,18 +239,23 @@ export default function AboutUs() {
 
     return (
         <div className="min-h-screen bg-white text-gray-900 font-sans">
+            <Head>
+                <title>About Astex AI | Intelligent Automation Experts</title>
+                <meta name="description" content="Learn about Astex AI, a leading AI Automation agency building autonomous agents and custom software to streamline enterprise workflows." />
+            </Head>
 
             {/* --- Section 1: Hero --- */}
             <section className="">
                 <div className="pt-8 md:pt-16 pb-12 max-w-[1400px] border-x border-[#d9d9d9] mx-auto px-4 sm:px-6">
                     <div className="text-center mb-6 md:mb-10">
-                        <span className="text-gray-500 text-sm font-semibold tracking-widest">Home • Company • <span className='text-[#e77d00]'>About Us</span></span>
+                        <span className="text-gray-500 text-sm font-semibold tracking-widest uppercase">Home • Company • <span className='text-[#e77d00]'>About Us</span></span>
                         <h1 className="mt-4 text-4xl md:text-6xl font-medium text-black">
-                            We build on transparency.
+                             Building the <span className="text-[#e77d00]">Autonomous</span> Future.
                         </h1>
                     </div>
 
                     <div className="relative w-full h-[200px] md:h-[400px] rounded-sm overflow-hidden group">
+                        {/* Use a tech/team related image here */}
                         <img
                             src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop"
                             alt="Astex AI Team"
@@ -253,10 +264,10 @@ export default function AboutUs() {
                         <div className="absolute inset-0 bg-black/40"></div>
                         <div className="absolute bottom-6 left-6 md:bottom-6 md:left-16">
                             <span className="text-white text-xs md:text-sm font-medium uppercase tracking-wider mb-2 block border-l-4 border-[#e77d00] pl-3">
-                                About Us
+                                Astex AI
                             </span>
                             <h2 className="text-3xl md:text-6xl font-medium text-white">
-                                We started small.
+                                Scaling Intelligence.
                             </h2>
                         </div>
                     </div>
@@ -266,11 +277,11 @@ export default function AboutUs() {
             {/* --- Section 2: Intro Text --- */}
             <section className="-mt-5 md:-mt-0">
                 <div className="max-w-[1400px] border-x border-[#d9d9d9] mx-auto px-6 text-center">
-                    <p className="text-lg md:text-xl md:ml-50 text-gray-600 leading-relaxed">
-                        Like you, we were a growing company needing to scale without the chaos.
-                        We began with a simple question: How can intelligence be automated?
-                        Yet, we stood strong to the test of time and discovered what we're good at.
-                        The goal was simple. We wanted to automate and simplify businesses so you can focus on the core area of your business—sales and revenue.
+                    <p className="text-lg md:text-xl md:text-xl md:ml-50 mx-auto text-gray-600 leading-relaxed">
+                        At <span className="font-bold text-[#1a1a1a]">Astex AI</span>, we believe the future isn't about working harder; it's about working smarter through intelligence. 
+                        We started with a simple mission: to eliminate the mundane. 
+                        From manual data entry to complex decision-making, we engineer <span className="text-[#e77d00]">AI Agents</span> that integrate seamlessly into your business, 
+                        allowing your team to focus on what truly matters—innovation and growth.
                     </p>
                 </div>
             </section>
@@ -278,9 +289,9 @@ export default function AboutUs() {
             {/* --- Section 3: Evolution Timeline (Carousel Style) --- */}
             <section className="pt-20 md:pt-30 pb-4 md:pb-18 max-w-[1400px] border-x border-[#d9d9d9] mx-auto px-4 sm:px-6">
                 <h2 className="text-4xl md:text-6xl text-center md:text-left font-medium text-black mb-2">
-                    The Astex<span className="text-[#e77d00]">ai</span> evolution:
+                    The Astex<span className="text-[#e77d00]">ai</span> Journey:
                 </h2>
-                <p className="text-gray-600 mb-0 md:mb-12 text-center md:text-left  text-lg">Our failure to success story.</p>
+                <p className="text-gray-600 mb-0 md:mb-12 text-center md:text-left text-lg">From Inception to Impact.</p>
 
                 {/* Carousel Container */}
                 <div className="flex items-center">
@@ -298,7 +309,7 @@ export default function AboutUs() {
                     <div
                         ref={scrollContainerRef}
                         className="flex-1 overflow-x-auto scrollbar-hide scroll-smooth py-10"
-                        style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }} // Hide scrollbar CSS
+                        style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }} 
                     >
                         <div className="flex min-w-max">
                             {timelineData.map((item, index) => (
@@ -311,15 +322,14 @@ export default function AboutUs() {
 
                                     {/* Line & Dot */}
                                     <div className="relative w-full flex items-center justify-center mb-8">
-                                        {/* The gray line going through the dot */}
                                         <div className="absolute top-1/2 left-0 w-full h-[2px] bg-[#d9d9d9]"></div>
-                                        {/* The Dot */}
                                         <div className="w-4 h-4 rounded-full border-[3px] border-[#e77d00] bg-white shadow-sm z-10"></div>
                                     </div>
 
-                                    {/* Card - Fixed for mobile to show full card */}
+                                    {/* Card */}
                                     <div className="bg-gray-50 p-6 rounded-lg w-full max-w-[320px] mx-auto min-h-[200px] text-center md:text-left transition-shadow hover:shadow-lg border-t-4 border-[#e77d00] hover:border-[#e77d00]">
-                                        <p className="text-gray-800 text-sm leading-relaxed text-center">
+                                        <h4 className="text-lg font-bold text-black mb-2">{item.title}</h4>
+                                        <p className="text-gray-800 text-sm leading-relaxed">
                                             {item.description}
                                         </p>
                                     </div>
@@ -341,13 +351,9 @@ export default function AboutUs() {
                 </div>
             </section>
 
-
-
             {/* --- Section 4: Core Values Banner (Dark) --- */}
             <section className="w-full px-5 font-inter">
                 <div className="max-w-[1400px] border-x border-[#d9d9d9] mx-auto relative overflow-hidden">
-
-                    {/* Background Gradient & Stripes Logic */}
                     <div
                         className="absolute inset-0 z-0"
                         style={{
@@ -364,27 +370,22 @@ export default function AboutUs() {
                         }}
                     ></div>
 
-                    {/* Content */}
                     <div className="relative z-10 p-[40px] md:p-[60px] md:px-[40px] text-white flex flex-col items-start justify-center min-h-[300px]">
                         <div className="max-w-[750px]">
                             <p className="text-[16px] md:text-[18px] text-white/80 leading-[1.6] mb-[30px] opacity-90">
                                 Our Core Values
                             </p>
                             <h2 className="text-[32px] md:text-[45px] font-medium mb-[15px] leading-[1.3]">
-                                For significant differences, we use this formula.
+                                We don't just write code. <br/> We Engineer Intelligence.
                             </h2>
                         </div>
                     </div>
-
                 </div>
             </section>
 
-
-
-
             {/* --- Section 5: The Formula Grid (White) --- */}
             <section className="bg-white">
-                <div className="max-w-[1400px]  pt-18 md:pt-22 pb-12 md:pb-16 border-x border-[#d9d9d9] mx-auto px-4 sm:px-6">
+                <div className="max-w-[1400px] pt-18 md:pt-22 pb-12 md:pb-16 border-x border-[#d9d9d9] mx-auto px-4 sm:px-6">
                     <h3 className="text-3xl md:text-5xl text-center md:text-left font-medium text-black mb-10">
                         The Astex Formula:
                     </h3>
@@ -395,7 +396,7 @@ export default function AboutUs() {
                             <div className="text-[#e77d00] mr-5 flex-shrink-0">
                                 <Icons.Chat />
                             </div>
-                            <span className="font-semibold text-gray-900 text-lg">No fluff. Straight talks.</span>
+                            <span className="font-semibold text-gray-900 text-lg">No fluff. Precision Engineering.</span>
                         </div>
 
                         {/* Card 2 */}
@@ -403,7 +404,7 @@ export default function AboutUs() {
                             <div className="text-[#e77d00] mr-5 flex-shrink-0">
                                 <Icons.Cpu />
                             </div>
-                            <span className="font-semibold text-gray-900 text-lg">Software isn't all we do. We consult.</span>
+                            <span className="font-semibold text-gray-900 text-lg">Software + Strategy = Success.</span>
                         </div>
 
                         {/* Card 3 */}
@@ -411,7 +412,7 @@ export default function AboutUs() {
                             <div className="text-[#e77d00] mr-5 flex-shrink-0">
                                 <Icons.Trophy />
                             </div>
-                            <span className="font-semibold text-gray-900 text-lg">You win, we win.</span>
+                            <span className="font-semibold text-gray-900 text-lg">ROI-First Mindset.</span>
                         </div>
 
                         {/* Card 4 */}
@@ -419,7 +420,7 @@ export default function AboutUs() {
                             <div className="text-[#e77d00] mr-5 flex-shrink-0">
                                 <Icons.Handshake />
                             </div>
-                            <span className="font-semibold text-gray-900 text-lg">No unnecessary meetings/calls</span>
+                            <span className="font-semibold text-gray-900 text-lg">Transparent Partnerships.</span>
                         </div>
 
                         {/* Card 5 */}
@@ -427,7 +428,7 @@ export default function AboutUs() {
                             <div className="text-[#e77d00] mr-5 flex-shrink-0">
                                 <Icons.Rocket />
                             </div>
-                            <span className="font-semibold text-gray-900 text-lg">Seamless Collaboration.</span>
+                            <span className="font-semibold text-gray-900 text-lg">Rapid Deployment.</span>
                         </div>
 
                         {/* Card 6 */}
@@ -435,7 +436,7 @@ export default function AboutUs() {
                             <div className="text-[#e77d00] mr-5 flex-shrink-0">
                                 <Icons.Bolt />
                             </div>
-                            <span className="font-semibold text-gray-900 text-lg">Quick execution.</span>
+                            <span className="font-semibold text-gray-900 text-lg">Scalable Architecture.</span>
                         </div>
                     </div>
                 </div>
@@ -445,30 +446,24 @@ export default function AboutUs() {
             <section className="bg-gray-50">
                 <div className="max-w-[1400px] border-x border-[#d9d9d9] mx-auto pt-10 md:pt-14 pb-12 md:pb-16 px-4 sm:px-6">
                     {/* Heading */}
-                    <div className="text-center max-w-3xl mx-auto  mb-10 md:mb-20">
-                        <h2 className="text-4xl md:text-6xl font-medium text-gray-900 mb-4">A Proven Path to Success</h2>
+                    <div className="text-center max-w-3xl mx-auto mb-10 md:mb-20">
+                        <h2 className="text-4xl md:text-6xl font-medium text-black mb-4">A Proven Path to Automation</h2>
                         <p className="text-[16px] md:text-[18px] text-[#4a4a4a] leading-relaxed">
-                            Through a powerful combination of technology, people, and AI agents, we help organizations
-                            transform their customer experience to create a driving competitive edge.
+                            Through a powerful combination of technology, people, and autonomous agents, we help organizations
+                            transform their operational efficiency to create a competitive edge.
                         </p>
                     </div>
 
-                    {/* =========================================
-              MOBILE / TABLET VIEW (< md)
-              Draggable/Scrollable cards mimicking the user image
-              ========================================= */}
+                    {/* MOBILE / TABLET VIEW */}
                     <div className="md:hidden relative w-full">
                         <div className="flex overflow-x-auto snap-x snap-mandatory pb-12 gap-5 px-2 scrollbar-hide" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
                             {provenPathData.map((step, idx) => (
                                 <div key={idx} className="min-w-[85vw] sm:min-w-[350px] snap-center relative pt-8">
-                                    {/* Icon Circle - Floating Top Center */}
                                     <div className="absolute top-0 left-1/2 transform -translate-x-1/2 z-10">
                                         <div className="w-16 h-16 bg-[#e77d00] rounded-full flex items-center justify-center shadow-md border-4 border-gray-50">
                                             {step.icon}
                                         </div>
                                     </div>
-
-                                    {/* Card Content */}
                                     <div className="bg-white p-8 pt-12 rounded-xl shadow-lg h-full flex flex-col items-center text-center">
                                         <h3 className="text-[#e77d00] text-xl font-bold mt-4 mb-4">
                                             {step.title}
@@ -480,121 +475,80 @@ export default function AboutUs() {
                                 </div>
                             ))}
                         </div>
-
-                        {/* Optional Visual Indicators (Dots) */}
-                        <div className="flex justify-center gap-2 -mt-2 md:mt-2">
+                         <div className="flex justify-center gap-2 -mt-2 md:mt-2">
                             {provenPathData.map((_, i) => (
                                 <div key={i} className="w-2 h-2 rounded-full bg-gray-300"></div>
                             ))}
                         </div>
                     </div>
 
-
-                    {/* =========================================
-              DESKTOP VIEW (>= md)
-              Original Hub & Grid Design - Unchanged
-              ========================================= */}
+                    {/* DESKTOP VIEW */}
                     <div className="hidden md:block relative max-w-6xl mx-auto">
-
-                        {/* --- Central Hub --- */}
-                        {/* Z-Index 20 to sit ON TOP of the cards */}
+                        {/* Central Hub */}
                         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 w-[200px] h-[200px] bg-white rounded-full border-2 border-dashed border-[#e77d00] flex items-center justify-center shadow-xl">
                             <h3 className="text-xl font-medium text-black text-center leading-tight">
-                                Partnership<br />Through the<br />Bot Lifecycle
+                                Partnership<br />Through the<br />Agent Lifecycle
                             </h3>
 
-                            {/* --- 4 Icons on the Rim --- */}
-
-                            {/* Top Left Icon - Strategy */}
+                            {/* Icons on Rim */}
                             <div className="absolute top-8 left-8 -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-[#e77d00] rounded-full flex items-center justify-center text-white shadow-md">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6">
-                                    <path strokeLinecap="round" strokeLinejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
-                                </svg>
+                                {provenPathData[0].icon}
                             </div>
-
-                            {/* Top Right Icon - Development */}
                             <div className="absolute top-8 right-8 translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-[#e77d00] rounded-full flex items-center justify-center text-white shadow-md">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6">
-                                    <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75" />
-                                </svg>
+                                {provenPathData[1].icon}
                             </div>
-
-                            {/* Bottom Left Icon - Engagement */}
                             <div className="absolute bottom-8 left-8 -translate-x-1/2 translate-y-1/2 w-12 h-12 bg-[#e77d00] rounded-full flex items-center justify-center text-white shadow-md">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6">
-                                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
-                                </svg>
+                                {provenPathData[2].icon}
                             </div>
-
-                            {/* Bottom Right Icon - Launch */}
                             <div className="absolute bottom-8 right-8 translate-x-1/2 translate-y-1/2 w-12 h-12 bg-[#e77d00] rounded-full flex items-center justify-center text-white shadow-md">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6">
-                                    <path strokeLinecap="round" strokeLinejoin="round" d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
-                                </svg>
+                                {provenPathData[3].icon}
                             </div>
                         </div>
 
-                        {/* --- The Cards Grid --- */}
+                        {/* Cards Grid */}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 relative z-10">
-
-                            {/* Card 1: Top Left */}
+                            {/* Card 1 */}
                             <div className="bg-white p-10 shadow-lg rounded-xl h-[250px] flex flex-col justify-start items-start text-left">
-                                <h3 className="text-[#e77d00] text-xl font-medium mb-6">Strategy & Design</h3>
+                                <h3 className="text-[#e77d00] text-xl font-medium mb-6">{provenPathData[0].title}</h3>
                                 <ul className="text-[15px] text-gray-600 space-y-2 font-medium">
-                                    <li>Define success and engagement goals</li>
-                                    <li>Ideate user stories, personas, & features</li>
-                                    <li>Create optimized bot content</li>
-                                    <li>Design tested & proven bot flows</li>
+                                    {provenPathData[0].points.map((p,i)=> <li key={i}>{p}</li>)}
                                 </ul>
                             </div>
-
-                            {/* Card 2: Top Right (Text Aligned Right) */}
+                            {/* Card 2 */}
                             <div className="bg-white p-10 shadow-lg rounded-xl h-[250px] flex flex-col justify-start items-end text-right">
-                                <h3 className="text-[#e77d00] text-xl font-medium mb-6">Development</h3>
+                                <h3 className="text-[#e77d00] text-xl font-medium mb-6">{provenPathData[1].title}</h3>
                                 <ul className="text-[15px] text-gray-600 space-y-2 font-medium">
-                                    <li>Build complex integrations</li>
-                                    <li>Add bot intelligence using NLP</li>
-                                    <li>Cross-channel capable implementations</li>
-                                    <li>Custom CMS implementation</li>
+                                     {provenPathData[1].points.map((p,i)=> <li key={i}>{p}</li>)}
                                 </ul>
                             </div>
-
-                            {/* Card 3: Bottom Left (Title at Bottom) */}
+                            {/* Card 3 */}
                             <div className="bg-white p-10 shadow-lg rounded-xl h-[250px] flex flex-col-reverse justify-end items-start text-left">
-                                <h3 className="text-[#e77d00] text-xl font-medium mt-6">Drive Further Engagement</h3>
+                                <h3 className="text-[#e77d00] text-xl font-medium mt-6">{provenPathData[2].title}</h3>
                                 <ul className="text-[15px] text-gray-600 space-y-2 font-medium">
-                                    <li>Extend complex inquiry capabilities</li>
-                                    <li>Advanced audience segmentation</li>
-                                    <li>Data-driven ROI measurement</li>
-                                    <li>Voice experience capabilities</li>
+                                     {provenPathData[2].points.map((p,i)=> <li key={i}>{p}</li>)}
                                 </ul>
                             </div>
-
-                            {/* Card 4: Bottom Right (Title at Bottom, Text Aligned Right) */}
+                            {/* Card 4 */}
                             <div className="bg-white p-10 shadow-lg rounded-xl h-[250px] flex flex-col-reverse justify-end items-end text-right">
-                                <h3 className="text-[#e77d00] text-xl font-medium mt-6">Launch & Improve</h3>
+                                <h3 className="text-[#e77d00] text-xl font-medium mt-6">{provenPathData[3].title}</h3>
                                 <ul className="text-[15px] text-gray-600 space-y-2 font-medium">
-                                    <li>Robust analytics capabilities</li>
-                                    <li>Bot A/B testing</li>
-                                    <li>Dedicated Support team</li>
-                                    <li>AM team drives new bot features</li>
+                                     {provenPathData[3].points.map((p,i)=> <li key={i}>{p}</li>)}
                                 </ul>
                             </div>
-
                         </div>
                     </div>
                 </div>
             </section>
 
-            {/* --- Section 7: Accomplishments/Testimonials (UPDATED with Slider) --- */}
+            {/* --- Section 7: Accomplishments/Testimonials --- */}
             <section className="bg-white">
                 <div className="max-w-[1400px] pt-12 md:pt-16 pb-0 md:pb-8 border-x border-[#d9d9d9] mx-auto px-4 sm:px-6">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl md:text-6xl font-medium text-black mb-4">Our Accomplishments</h2>
-                        <p className="text-[16px] md:text-[18px] text-[#4a4a4a]">Below are just a few reviews from our amazing clients.</p>
+                        <h2 className="text-4xl md:text-6xl font-medium text-black mb-4">Our Impact</h2>
+                        <p className="text-[16px] md:text-[18px] text-[#4a4a4a]">See what industry leaders are saying about Astex AI.</p>
                     </div>
 
-                    {/* Slider Container - Added smooth scroll for PC */}
+                    {/* Slider */}
                     <div
                         ref={accomplishmentsRef}
                         onMouseDown={startDrag}
@@ -608,14 +562,13 @@ export default function AboutUs() {
                         {accomplishmentsData.map((item, index) => (
                             <div
                                 key={index}
-                                // Added smooth transition for PC sliding
                                 className="w-full md:w-1/3 flex-shrink-0 snap-center px-4 transition-transform duration-300 ease-out"
                             >
                                 <div className="bg-gray-50 p-8 rounded-lg shadow-sm border border-gray-100 flex flex-col h-full select-none">
                                     <div className="text-[#e77d00] mb-6">
                                         <Icons.Quote />
                                     </div>
-                                    <p className="text-gray-600 mb-8 flex-grow">
+                                    <p className="text-gray-600 mb-8 flex-grow italic">
                                         "{item.quote}"
                                     </p>
                                     <div className="flex items-center mt-auto">
@@ -630,7 +583,7 @@ export default function AboutUs() {
                         ))}
                     </div>
 
-                    {/* Dots Indicator */}
+                    {/* Dots */}
                     <div className="flex justify-center gap-2 mt-4 pb-8">
                         {accomplishmentsData.map((_, index) => (
                             <div
@@ -642,6 +595,7 @@ export default function AboutUs() {
                     </div>
                 </div>
             </section>
+            
             <ContactUs />
 
         </div>
