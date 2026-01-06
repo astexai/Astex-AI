@@ -1,5 +1,6 @@
 'use client';
 import React from 'react';
+import Link from 'next/link';
 
 // --- Social Icons ---
 const LinkedInIcon = () => (
@@ -87,7 +88,7 @@ const Leadership = () => {
         {/* --- Header Section --- */}
         <div className="text-center mb-16">
           <p className="text-xs md:text-sm font-medium tracking-[0.2em] text-gray-500 mb-4">
-            Home / Company / <span className='text-[#e77d00]'>Leadership</span>
+            <span className='text-[#e77d00]'>Astex AI</span>
           </p>
           <h1 className="text-[32px] md:text-[45px] font-medium text-black mb-2">
             Meet the Founding Team

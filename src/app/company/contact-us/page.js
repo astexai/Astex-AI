@@ -2,6 +2,7 @@
 import React, { useState, useRef } from 'react';
 import Partners from '@/components/Partners';
 import Accomplishments from '@/components/Accomplishments';
+import Link from 'next/link';
 
 // --- Icons (Extracted for Accomplishments) ---
 const QuoteIcon = () => (
@@ -90,12 +91,14 @@ const ContactUs = () => {
       <div className="max-w-[1400px] px-4 md:px-10 border-x border-[#d9d9d9] mx-auto pt-10 md:pt-16 pb-4">
         
         {/* Breadcrumb */}
-        <nav className="text-sm mb-6 text-center md:text-left text-gray-500">
-          <span>Home</span>
-          <span className="mx-2">/</span>
-          <span>Company</span>
-          <span className="mx-2">/</span>
-          <span className="text-[#e77d00] font-medium">Contact us</span>
+        <nav className="text-sm text-gray-500 mb-8 tracking-wide flex items-center gap-2">
+          <Link href="/" className="hover:text-[#e77d00] transition-colors">
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+          </Link>
+          <span>/</span>
+          <span className="">Company</span> 
+          <span>/</span> 
+          <span className="text-[#e77d00] font-medium">Contact Us</span>
         </nav>
 
         {/* Page Title */}

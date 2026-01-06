@@ -238,7 +238,7 @@ export default function AboutUs() {
             <section className="">
                 <div className="pt-8 md:pt-16 pb-12 max-w-[1400px] border-x border-[#d9d9d9] mx-auto px-4 sm:px-6">
                     <div className="text-center mb-6 md:mb-10">
-                        <span className="text-gray-500 text-sm font-semibold uppercase tracking-widest">Home • About Us</span>
+                        <span className="text-gray-500 text-sm font-semibold tracking-widest">Home • Company • <span className='text-[#e77d00]'>About Us</span></span>
                         <h1 className="mt-4 text-4xl md:text-6xl font-medium text-black">
                             We build on transparency.
                         </h1>

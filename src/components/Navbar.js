@@ -153,9 +153,9 @@ const Navbar = () => {
       imageUrl: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=600&auto=format&fit=crop",
       items: [
         { name: "About Us", url: "/company/about-us" },
-        { name: "Testimonials", url: "/company/testimonials" },
+        // { name: "Testimonials", url: "/company/testimonials" },
         { name: "Leadership", url: "/company/leadership" },
-        { name: "Blogs & Insights", url: "/company/blogs-&-insights" },
+        { name: "Blogs & Insights", url: "/company/blogs-and-insights" },
         { name: "Contacts", url: "/company/contact-us" },
       ]
     }
