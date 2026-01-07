@@ -11,7 +11,7 @@ const IndustriesServe = () => {
       name: 'Healthcare',
       title: 'Healthcare & Medical Services',
       // Using placeholder images as per original code logic
-      image: 'https://masterofcode.com/wp-content/uploads/2025/07/Frame-1000004983.png',
+      image: '/assets/home/solutions-healthcare.png',
       features: [
         { icon: 'chat', text: 'AI Patient Support<br>Chatbots' },
         { icon: 'calendar', text: 'Appointment<br>Scheduling' },
@@ -25,7 +25,7 @@ const IndustriesServe = () => {
       id: 'education',
       name: 'Education',
       title: 'Education & Learning Systems',
-      image: 'https://masterofcode.com/wp-content/uploads/2025/07/master_of_code_global_Laptop_and_phone_with_predictive_graphs_a_764e2fc7-a550-4ec9-9944-a13beef60c3e-copy-1.png',
+      image: '/assets/home/solutions-education.png',
       features: [
         { icon: 'chat', text: 'Student Support<br>Assistants' },
         { icon: 'calendar', text: 'Classroom<br>Scheduling' },
@@ -39,7 +39,7 @@ const IndustriesServe = () => {
       id: 'enterprise',
       name: 'Enterprise Operations',
       title: 'Enterprise & Business Operations',
-      image: 'https://masterofcode.com/wp-content/uploads/2025/07/Deep-Learning-Development-Company.png',
+      image: '/assets/home/solutions-enterprise.png',
       features: [
         { icon: 'chat', text: 'Internal HR<br>Bots' },
         { icon: 'calendar', text: 'Meeting<br>Coordination' },
@@ -53,7 +53,7 @@ const IndustriesServe = () => {
       id: 'ecommerce',
       name: 'E-Commerce',
       title: 'E-Commerce & Retail AI',
-      image: 'https://masterofcode.com/wp-content/uploads/2025/07/Frame-1000004983-1.png',
+      image: '/assets/home/solutions-ecommerce.png',
       features: [
         { icon: 'chat', text: 'Customer<br>Support' },
         { icon: 'calendar', text: 'Inventory<br>Forecasting' },
@@ -67,7 +67,7 @@ const IndustriesServe = () => {
       id: 'finance',
       name: 'Finance',
       title: 'Finance & Banking Solutions',
-      image: 'https://masterofcode.com/wp-content/uploads/2025/07/master_of_code_global_Laptop_and_phone_with_predictive_graphs_a_764e2fc7-a550-4ec9-9944-a13beef60c3e-copy-1.png',
+      image: '/assets/home/solutions-finance.png',
       features: [
         { icon: 'chat', text: 'Advisory<br>Agents' },
         { icon: 'calendar', text: 'Audit<br>Scheduling' },
@@ -81,7 +81,7 @@ const IndustriesServe = () => {
       id: 'realestate',
       name: 'Real Estate',
       title: 'Real Estate & Property Tech',
-      image: 'https://masterofcode.com/wp-content/uploads/2025/11/real-estate.png',
+      image: '/assets/home/solutions-realestate.png',
       features: [
         { icon: 'chat', text: 'Lead Qualify<br>Bots' },
         { icon: 'calendar', text: 'Viewing<br>Scheduling' },
@@ -92,19 +92,20 @@ const IndustriesServe = () => {
       ]
     },
     {
-      id: 'finance',
-      name: 'Finance',
-      title: 'Finance & Banking Solutions',
-      image: 'https://masterofcode.com/wp-content/uploads/2025/07/master_of_code_global_Laptop_and_phone_with_predictive_graphs_a_764e2fc7-a550-4ec9-9944-a13beef60c3e-copy-1.png',
-      features: [
-        { icon: 'chat', text: 'Advisory<br>Agents' },
-        { icon: 'calendar', text: 'Audit<br>Scheduling' },
-        { icon: 'heart', text: 'Fraud<br>Detection' },
-        { icon: 'database', text: 'Risk<br>Analysis' },
-        { icon: 'bill', text: 'Loan<br>Processing' },
-        { icon: 'crm', text: 'Client<br>Portals' }
-      ]
-    },
+  id: 'marketing',
+  name: 'Marketing',
+  title: 'Marketing Agencies & Service Businesses',
+  image: '/assets/home/solutions-marketing.png',
+  features: [
+    { icon: 'chat', text: 'Lead Capture<br>Bots' },
+    { icon: 'calendar', text: 'Appointment<br>Scheduling' },
+    { icon: 'heart', text: 'Client<br>Engagement' },
+    { icon: 'database', text: 'Campaign<br>Analytics' },
+    { icon: 'bill', text: 'Invoice &<br>Payments' },
+    { icon: 'crm', text: 'Client<br>CRM Dashboard' }
+  ]
+}
+
   ];
 
   // --- Icons ---

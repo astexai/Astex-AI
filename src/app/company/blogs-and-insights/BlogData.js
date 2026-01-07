@@ -7,10 +7,10 @@ export const blogsData = [
       title: "The Rise of Autonomous AI Agents in Enterprise Workflows",
       subtitle: "Moving beyond simple chatbots to goal-oriented agents that plan, execute, and learn.",
       category: "Featured Insights",
-      publishedDate: "12/28/2025",
+      publishedDate: "Jan 05, 2026",
       author: "Automation Team",
       readTime: "6 Min Read",
-      image: "/assets/demo.png", // Ensure this image exists in your public folder
+      image: "/assets/blogs/blog1banner.png", // Ensure this image exists in your public folder
       
       // These tags must match the filters in your main page
       tags: [
@@ -99,10 +99,10 @@ export const blogsData = [
       title: "Orchestrating Multi-Agent Systems for Customer Support",
       subtitle: "How to coordinate specialized agents to resolve complex customer queries without hallucinations.",
       category: "Case Studies",
-      publishedDate: "01/05/2026",
+      publishedDate: "Jan 05, 2026",
       author: "Automation Team",
       readTime: "8 Min Read",
-      image: "/assets/demo.png",
+      image: "/assets/blogs/blog2banner.png",
       
       tags: [
         "Chatbot Engineering", 
@@ -181,7 +181,132 @@ export const blogsData = [
           text: "By moving from a chatbot to a Multi-Agent System, businesses can handle scale during peak seasons (like Black Friday) without scaling headcount linearly. The future of support is agentic."
         }
       ]
+    },
+    {
+  id: "agentic-automation-business-operations",
+  slug: "agentic-ai-automation-business-operations",
+  title: "From Tasks to Outcomes: Agentic AI Automation in Business Operations",
+  subtitle: "Why modern businesses are shifting from workflows to goal-driven autonomous agents.",
+  category: "Strategy & Transformation",
+  publishedDate: "Jan 05, 2026",
+  author: "Automation Team",
+  readTime: "7 Min Read",
+  image: "/assets/blogs/blog3banner.png",
+
+  tags: [
+    "Agentic Automation",
+    "AI Agents Development",
+    "Business Operations",
+    "Process Optimization"
+  ],
+
+  content: [
+    {
+      type: "paragraph",
+      id: "introduction",
+      headingLabel: "Introduction",
+      text: "<span class='font-bold text-black'>TL;DR:</span> Traditional automation executes tasks. Agentic AI automation delivers outcomes. Instead of following static workflows, agents understand objectives, choose the right actions, collaborate with tools, and continuously optimize business processes without manual supervision."
+    },
+    {
+      type: "paragraph",
+      text: "Most enterprises still rely on pipelines and SOP-based automation. These systems are deterministic — they repeat what they are told. Agentic AI introduces a paradigm shift: systems that reason, adapt, and operate with autonomy across finance, support, operations, and growth functions."
+    },
+    {
+      type: "quote",
+      text: "Agentic automation transforms businesses from process-driven organizations into intelligence-driven organizations."
+    },
+    {
+      type: "heading",
+      level: 2,
+      id: "from-workflows-to-outcomes",
+      text: "From Workflows to Outcomes"
+    },
+    {
+      type: "paragraph",
+      text: "In a workflow model, every step must be predefined. In an agentic model, the business defines a goal — like 'reduce churn risk' or 'recover failed payments' — and the agent determines the optimal path using reasoning, memory, and real-time data signals."
+    },
+    {
+      type: "list",
+      items: [
+        "<strong>Goal-Oriented Execution:</strong> Agents start from an objective, not a script.",
+        "<strong>Context Awareness:</strong> They pull information from CRM, databases, and logs before acting.",
+        "<strong>Adaptive Decisions:</strong> If a step fails, the agent explores alternative paths.",
+        "<strong>Closed-Loop Action:</strong> Decisions lead to measurable business impact, not just workflows."
+      ]
+    },
+    {
+      type: "heading",
+      level: 2,
+      id: "real-world-usecases",
+      text: "High-Impact Enterprise Use Cases"
+    },
+    {
+      type: "paragraph",
+      text: "We are deploying agentic systems across multiple business functions where rigid automation previously failed."
+    },
+    {
+      type: "table",
+      headers: ["Function", "Traditional Automation", "Agentic Automation"],
+      rows: [
+        ["Revenue Ops", "Sends static reminder emails", "Identifies intent, contacts customer, schedules follow-ups, updates CRM"],
+        ["Customer Success", "Ticket routing", "Churn-risk detection, conversation drafting, action execution"],
+        ["Finance Ops", "Report generation", "Insight discovery, anomaly detection, corrective workflows"],
+        ["Operations", "Static task queues", "Dynamic prioritization and autonomous resolution loops"]
+      ]
+    },
+    {
+      type: "heading",
+      level: 2,
+      id: "architecture",
+      text: "Agentic Automation Architecture Blueprint"
+    },
+    {
+      type: "paragraph",
+      text: "A scalable agentic automation stack typically includes:"
+    },
+    {
+      type: "list",
+      items: [
+        "<strong>Router Agent:</strong> Interprets the goal and routes tasks to specialists.",
+        "<strong>Specialist Agents:</strong> Finance, Support, Research, or Ops-focused modules.",
+        "<strong>Memory Layer:</strong> Long-term business context & operational state.",
+        "<strong>Action Layer:</strong> API integrations for execution (CRM, ERP, Slack, Email, Databases).",
+        "<strong>Governance & Safety:</strong> Approval thresholds and audit logging."
+      ]
+    },
+    {
+      type: "heading",
+      level: 2,
+      id: "impact-measurement",
+      text: "Measuring Business Impact"
+    },
+    {
+      type: "paragraph",
+      text: "A recent deployment in a logistics operations team replaced rule-based automation with an agentic execution loop. The impact was measured across productivity, response time, and operational leakage."
+    },
+    {
+      type: "table",
+      headers: ["Metric", "Before (Manual + Scripts)", "After (Agentic Automation)"],
+      rows: [
+        ["Task Throughput", "220/day", "640/day"],
+        ["Resolution Time", "18 mins avg", "2.5 mins avg"],
+        ["Escalation Dependency", "62%", "19%"],
+        ["Operational Cost", "Baseline", "↓ 37%"]
+      ]
+    },
+    {
+      type: "heading",
+      level: 2,
+      id: "conclusion",
+      text: "Conclusion: Automation That Thinks"
+    },
+    {
+      type: "paragraph",
+      text: "Agentic AI automation marks the next evolutionary step in enterprise transformation. Instead of automating tasks, businesses are now automating decision-making and execution. Organizations that adopt agentic systems early will outperform competitors not by working harder — but by operating smarter."
     }
+  ]
+}
+
   ];
   
   // Helper to fetch all blogs

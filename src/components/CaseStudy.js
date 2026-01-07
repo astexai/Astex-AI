@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useEffect, useRef } from 'react';
+import Link from 'next/link';
 
 const CaseStudy = () => {
   // Intersection Observer for Text Animation
@@ -38,17 +39,17 @@ const CaseStudy = () => {
               Case Study
             </h4>
             <h3 className="text-[32px] md:text-[45px] font-medium leading-[1.2] text-black">
-              Transforming Business Challenges into Intelligent Outcomes
+              Scaling Patient Care with Intelligent WhatsApp Agents
             </h3>
           </div>
 
           {/* Right Side */}
           <div className="anim-item opacity-0 translate-y-5 transition-all duration-700 delay-200 flex flex-col gap-[25px]">
             <p className="text-[16px] md:text-[18px] leading-[1.6] text-[#4a4a4a]">
-              This case study showcases how we helped a forward-thinking organization transform its operations using AI-driven automation and intelligent systems. By replacing manual workflows with smart, scalable solutions, the business achieved higher efficiency, reduced complexity, and measurable growth.
+             A conversational WhatsApp AI Agent that streamlines the full patient workflow: appointment booking, document collection, reminders, prescription sharing, feedback capture, and ongoing care follow-ups — all handled automatically without manual intervention.
             </p>
             
-            <button className="bg-[#f7941d] text-black py-[14px] px-[28px] border-none font-semibold text-[15px] cursor-pointer w-fit flex items-center gap-2.5 hover:opacity-90 transition-opacity">
+            <Link href="/case-studies/clinic-whatsapp-automation" className="bg-[#f7941d] text-black py-[14px] px-[28px] border-none font-semibold text-[15px] cursor-pointer w-fit flex items-center gap-2.5 hover:opacity-90 transition-opacity">
               Read the case study
               <svg 
                 width="16" 
@@ -63,7 +64,7 @@ const CaseStudy = () => {
                 <line x1="5" y1="12" x2="19" y2="12"></line>
                 <polyline points="12 5 19 12 12 19"></polyline>
               </svg>
-            </button>
+            </Link>
           </div>
         </div>
 
@@ -84,7 +85,7 @@ const CaseStudy = () => {
 
           {/* Image */}
           <img 
-            src="/assets/casestudy.webp"
+            src="/assets/case-studies/whatsapp.png"
             alt="AI Network Background"
             className="w-full h-full object-cover transition-transform duration-700"
           />

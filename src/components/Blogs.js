@@ -1,24 +1,28 @@
 import React from 'react';
+import Link from 'next/link';
 
 const Blogs = () => {
   const articles = [
     {
-      date: 'Dec 28, 2025',
-      title: 'How AI Automation is Transforming Modern Business Operations',
+      date: 'Jan 05, 2026',
+      title: 'The Rise of Autonomous AI Agents in Enterprise Workflows',
       // Tech/Business abstract image
-      image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=800&auto=format&fit=crop'
+      image: '/assets/blogs/blog1banner.png',
+      link: '/company/blogs-and-insights/autonomous-ai-agents-enterprise-workflows',
     },
     {
-      date: 'Dec 28, 2025',
-      title: 'Building Intelligent Systems That Scale with Your Enterprise',
+      date: 'Jan 05, 2026',
+      title: 'Orchestrating Multi-Agent Systems for Customer Support',
       // Circuit/Data image
-      image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop'
+      image: '/assets/blogs/blog2banner.png',
+       link: '/company/blogs-and-insights/orchestrating-multi-agent-systems-support',
     },
     {
-      date: 'Dec 28, 2025',
-      title: 'Real-World Use Cases of AI Agents in Industry',
+      date: 'Jan 05, 2026',
+      title: 'From Tasks to Outcomes: Agentic AI Automation in Business Operations',
       // Robot/Handshake image
-      image: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=800&auto=format&fit=crop'
+      image: '/assets/blogs/blog3banner.png',
+       link: '/company/blogs-and-insights/agentic-ai-automation-business-operations',
     }
   ];
 
@@ -52,7 +56,9 @@ const Blogs = () => {
 
               {/* Title */}
               <h4 className="text-[22px] font-medium leading-[1.5] text-[#111] transition-colors duration-200 group-hover:text-[#f7941d]">
-                {item.title}
+                <Link href={item.link}>
+                  {item.title}
+                </Link>
               </h4>
 
             </div>

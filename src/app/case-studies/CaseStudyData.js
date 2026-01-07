@@ -9,7 +9,7 @@ export const caseStudiesData = [
       industry: "Healthcare",
       duration: "15 days",
       region: "India",
-      image: "/assets/demo.png",
+      image: "/assets/case-studies/whatsapp2.png",
       description: "Automating the entire patient journey—from booking appointments to post-consultation follow-ups—using a conversational WhatsApp AI Agent.",
       
       // Stats for the Listing Page Card
@@ -61,7 +61,7 @@ export const caseStudiesData = [
       industry: "Enterprise IT",
       duration: "4 Weeks",
       region: "USA",
-      image: "/assets/demo.png",
+      image: "/assets/case-studies/slack.png",
       description: "A background agent that securely archives daily Slack workspaces to Google Drive to bypass the 90-day free plan data limit.",
       
       previewStats: [
@@ -111,7 +111,7 @@ export const caseStudiesData = [
       industry: "Hospitality",
       duration: "3 Weeks",
       region: "Europe",
-      image: "/assets/demo.png",
+      image: "/assets/case-studies/cafe.png",
       description: "Automating table ordering, payments, and customer management to reduce waiter dependency and increase table turnover.",
       
       previewStats: [

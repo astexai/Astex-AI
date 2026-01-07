@@ -46,7 +46,7 @@ const CaseStudyDetail = () => {
         {/* ================= HEADER SECTION ================= */}
         <div className="px-6 md:px-12 pt-12 md:pt-20 pb-12">
             {/* Back Link */}
-            <Link href="/case-study" className="inline-flex items-center text-gray-500 hover:text-[#e77d00] transition-colors mb-8 text-sm uppercase tracking-wider font-medium">
+            <Link href="/case-studies" className="inline-flex items-center text-gray-500 hover:text-[#e77d00] transition-colors mb-8 text-sm uppercase tracking-wider font-medium">
                 <Icons.ArrowLeft />
                 Back to Case Studies
             </Link>
