@@ -5,7 +5,7 @@ const aiSolutionsData = [
         slug: "e-commerce-d2c",
         heroTitle: "Scale Your E-Commerce Growth with AI-Driven Intelligence",
         heroSubtitle: "Convert more customers, deliver hyper-personalized experiences, and automate operations with AI solutions built for modern online retail and D2C brands",
-        heroImage: "/assets/demo.png",
+        heroImage: "/assets/aisolutions/ecommerce.png",
         description: "Smart AI solutions that empower e-commerce and D2C brands with personalization, automation, intelligent pricing, and data-driven customer engagement to drive sustainable growth and profitability.",
 
         impactTitle: "Driving Measurable Growth for E-Commerce Brands",
@@ -94,7 +94,7 @@ const aiSolutionsData = [
         slug: "travel-hospitality",
         heroTitle: "Deliver Exceptional Guest Experiences with AI-Powered Hospitality Solutions",
         heroSubtitle: "Enhance guest satisfaction, optimize operations, and maximize revenue using AI systems built for hotels, travel platforms, airlines, and hospitality businesses",
-        heroImage: "/assets/demo.png",
+        heroImage: "/assets/aisolutions/travel.png",
         description: "AI-driven platforms that transform bookings, guest engagement, service automation, and revenue optimization — creating smarter, personalized, and efficient travel experiences.",
 
         impactTitle: "Meaningful Impact Across Travel & Hospitality",
@@ -171,7 +171,7 @@ const aiSolutionsData = [
         slug: "healthcare-clinics",
         heroTitle: "Build Smarter, Patient-Centric Healthcare Systems with AI",
         heroSubtitle: "Enhance diagnostics, streamline workflows, and strengthen patient outcomes with secure and compliant AI solutions for clinics, hospitals, and medical practices",
-        heroImage: "/assets/demo.png",
+        heroImage: "/assets/aisolutions/healthcare.png",
         description: "AI-enabled healthcare solutions that support doctors, accelerate diagnosis, automate administrative workflows, and improve patient engagement with accuracy, safety, and compliance at the core.",
 
         impactTitle: "Transforming Healthcare with Intelligent Automation",
@@ -248,7 +248,7 @@ const aiSolutionsData = [
         slug: "ed-tech-coaching-institutes",
         heroTitle: "Empower Learning with AI-Driven Education Intelligence",
         heroSubtitle: "Deliver personalized learning journeys, support teachers, and enhance student performance with AI solutions built for institutes, coaching centers, and digital learning platforms",
-        heroImage: "/assets/demo.png",
+        heroImage: "/assets/aisolutions/edtech.png",
         description: "AI-powered education solutions that enable adaptive learning, automated assessments, intelligent tutoring, and deep learning analytics to improve teaching efficiency and student outcomes.",
 
         impactTitle: "Unlocking Growth in Education Through AI",
@@ -324,7 +324,7 @@ const aiSolutionsData = [
     slug: "real-estate-property",
     heroTitle: "Transform Real Estate Operations with AI-Powered Intelligence",
     heroSubtitle: "Automate lead qualification, optimize property sales, and deliver personalized buyer experiences using AI solutions designed for real estate developers, brokers, and property platforms",
-    heroImage: "/assets/real-estate.png",
+    heroImage: "/assets/aisolutions/realestate.png",
     description: "AI-driven real estate solutions that enhance sales efficiency, improve property discovery, automate client interactions, and enable data-driven decision-making across buying, renting, and investment processes.",
 
     impactTitle: "Driving Smart Growth in Real Estate with AI",
@@ -401,7 +401,7 @@ const aiSolutionsData = [
     slug: "finance-banking-fintech",
     heroTitle: "Enable Intelligent Finance Automation with AI Solutions",
     heroSubtitle: "Enhance risk analysis, fraud detection, customer experience, and financial operations using AI built for banks, fintechs, NBFCs, and lending institutions",
-    heroImage: "/assets/fintech.png",
+    heroImage: "/assets/aisolutions/finance.png",
     description: "AI-powered financial intelligence that supports lending, compliance, fraud prevention, credit automation, and hyper-personalized customer engagement across digital banking ecosystems.",
 
     impactTitle: "AI Bringing Innovation to Modern Finance",
@@ -478,7 +478,7 @@ const aiSolutionsData = [
     slug: "restaurants-cafes",
     heroTitle: "Transform Food Service Operations with AI Automation",
     heroSubtitle: "Boost order efficiency, improve customer experience, and optimize kitchen operations using AI solutions built for restaurants, cafes, and cloud kitchens",
-    heroImage: "/assets/restaurant.png",
+    heroImage: "/assets/aisolutions/cafes.png",
     description: "AI-powered restaurant automation that enhances order management, demand forecasting, customer engagement, staff efficiency, and decision-making across dine-in and delivery ecosystems.",
 
     impactTitle: "Making Restaurants Smarter with AI",
@@ -554,7 +554,7 @@ const aiSolutionsData = [
     slug: "saas-software-companies",
     heroTitle: "Accelerate SaaS Growth with AI-Powered Product & Revenue Intelligence",
     heroSubtitle: "Optimize user acquisition, retention, onboarding, and product experiences with AI solutions designed for SaaS platforms and software businesses",
-    heroImage: "/assets/saas.png",
+    heroImage: "/assets/aisolutions/saas.png",
     description: "AI-driven SaaS growth solutions that improve user engagement, automate customer success workflows, enhance product intelligence, and drive predictable recurring revenue.",
 
     impactTitle: "Driving Scalable Growth for SaaS & Software Products",
@@ -631,7 +631,7 @@ const aiSolutionsData = [
     slug: "marketing-agencies-service-businesses",
     heroTitle: "Scale Client Results & Agency Operations with AI Automation",
     heroSubtitle: "Increase campaign performance, automate workflows, and deliver data-driven client outcomes using AI solutions built for agencies and professional service companies",
-    heroImage: "/assets/agency.png",
+    heroImage: "/assets/aisolutions/marketing.png",
     description: "AI-powered automation for agencies that improves campaign execution, lead generation, reporting, client communication, and operational efficiency across service delivery cycles.",
 
     impactTitle: "AI That Empowers Agencies to Deliver More Value",
@@ -708,7 +708,7 @@ const aiSolutionsData = [
     slug: "logistics-supply-chain",
     heroTitle: "Optimize Logistics Efficiency with AI-Powered Automation & Forecasting",
     heroSubtitle: "Reduce delivery costs, improve fleet efficiency, and enable real-time logistics intelligence with AI solutions built for supply chain and transportation networks",
-    heroImage: "/assets/logistics.png",
+    heroImage: "/assets/aisolutions/logistics.png",
     description: "AI solutions that enhance route optimization, shipment tracking, demand forecasting, inventory movement planning, and operational visibility across logistics and supply chain ecosystems.",
 
     impactTitle: "Making Supply Chains Smarter with AI",
@@ -785,7 +785,7 @@ const aiSolutionsData = [
     slug: "hr-recruitment-staffing",
     heroTitle: "Transform Hiring & Workforce Operations with AI Talent Intelligence",
     heroSubtitle: "Automate hiring workflows, improve candidate screening, and enhance employee lifecycle management using AI solutions for HR and staffing organizations",
-    heroImage: "/assets/hr.png",
+    heroImage: "/assets/aisolutions/hr.png",
     description: "AI-driven HR and recruitment solutions that streamline hiring, automate candidate assessment, enhance workforce analytics, and improve organizational productivity.",
 
     impactTitle: "Unlocking Efficiency in Hiring & Workforce Management",
@@ -862,7 +862,7 @@ const aiSolutionsData = [
     slug: "education-institutes-universities",
     heroTitle: "Enable Smart Campus & Academic Intelligence with AI Solutions",
     heroSubtitle: "Enhance student success, automate administration, and enable data-driven institutional decisions using AI built for universities and educational institutions",
-    heroImage: "/assets/university.png",
+    heroImage: "/assets/aisolutions/education.png",
     description: "AI-powered campus and academic solutions that improve student lifecycle management, academic planning, administrative workflows, and institutional performance analytics.",
 
     impactTitle: "Transforming Institutions with AI-Driven Intelligence",

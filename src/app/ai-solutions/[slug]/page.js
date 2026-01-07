@@ -99,12 +99,12 @@ const AiSolutionPage = () => {
                         {/* Hero Image/Icon */}
                          {/* Hero Image - Square Design */}
                         <div className="relative flex justify-center items-center h-[300px] md:h-[450px]">
-                            <div className="relative w-full h-full overflow-hidden rounded-xl shadow-lg">
+                            <div className="relative w-[90%] h-full overflow-hidden">
                                 {/* Fallback background if image doesn't load */}
-                                <div className="absolute inset-0 bg-gradient-to-br from-[#e77d00]/10 to-black/5"></div>
+                                <div className="absolute inset-0"></div>
                                 
                                 {/* Square Image Container */}
-                                <div className="relative w-full h-full">
+                                <div className="relative w-[90%] h-full">
                                     <Image
                                         src={solution.heroImage}
                                         alt={solution.title}
@@ -114,11 +114,11 @@ const AiSolutionPage = () => {
                                         priority
                                     />
                                     {/* Overlay for better text visibility if needed */}
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent"></div>
+                                    {/* <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent"></div> */}
                                 </div>
                                 
                                 {/* Decorative element */}
-                                <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-[#e77d00] rounded-full opacity-10 blur-3xl"></div>
+                                {/* <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-[#e77d00] rounded-full opacity-10 blur-3xl"></div> */}
                             </div>
                         </div>
 

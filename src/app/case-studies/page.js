@@ -137,7 +137,7 @@ const CaseStudy = () => {
                         ))}
                     </div>
 
-                    <Link href={`/case-study/${featuredCase.slug}`} className="inline-flex items-center text-sm font-bold uppercase tracking-widest text-[#1a1a1a] hover:text-[#e77d00] transition-colors group">
+                    <Link href={`/case-studies/${featuredCase.slug}`} className="inline-flex items-center text-sm font-bold uppercase tracking-widest text-[#1a1a1a] hover:text-[#e77d00] transition-colors group">
                         Read Full Case Study
                         <div className="transform group-hover:translate-x-1 transition-transform">
                             <Icons.ArrowRight />
@@ -152,7 +152,7 @@ const CaseStudy = () => {
             {/* If 'All' is active, we mapped the first one as featured, so show the rest. If filtered, show all matches. */}
             {(activeIndustry === 'All' ? remainingCases : filteredCases).map((study, index) => (
                 <Link 
-                    href={`/case-study/${study.slug}`} 
+                    href={`/case-studies/${study.slug}`} 
                     key={study.id}
                     className={`group flex flex-col h-full bg-white border-b border-[#d9d9d9] p-8 hover:bg-gray-50 transition-colors duration-300
                         ${(index + 1) % 3 !== 0 ? 'lg:border-r' : ''} 
