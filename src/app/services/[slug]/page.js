@@ -3,6 +3,10 @@
 import React from 'react';
 import { useParams } from 'next/navigation';
 import { getServiceBySlug } from '../ServiceData';
+import Link from 'next/link';
+import SectionBanner from '@/components/SectionBanner';
+import ContactUs from '@/components/ContactUs';
+
 
 // --- Icons ---
 const Icons = {
@@ -74,12 +78,12 @@ const ServicePage = () => {
                     </p>
 
                     <div className="flex flex-row gap-4 mb-20">
-                        <button className="bg-[#e77d00] cursor-pointer hover:bg-black text-white px-8 py-3.5 font-medium uppercase text-xs tracking-wider transition-colors duration-300">
+                        <Link href="/company/contact-us" className="bg-[#e77d00] cursor-pointer hover:bg-black text-white px-8 py-3.5 font-medium uppercase text-xs tracking-wider transition-colors duration-300">
                             Get Started
-                        </button>
-                        <button className="border cursor-pointer border-black hover:bg-gray-50 text-black px-8 py-3.5 font-medium uppercase text-xs tracking-wider transition-colors duration-300">
+                        </Link>
+                        <Link href="/company/contact-us" className="border cursor-pointer border-black hover:bg-gray-50 text-black px-8 py-3.5 font-medium uppercase text-xs tracking-wider transition-colors duration-300">
                             Contact Us
-                        </button>
+                        </Link>
                     </div>
 
                     {/* Logo Strip */}
@@ -245,7 +249,8 @@ const ServicePage = () => {
                     </div>
                 </div>
             </section>
-
+            <SectionBanner />
+            <ContactUs />
         </div>
     );
 };

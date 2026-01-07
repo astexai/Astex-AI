@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 const FinalCta = () => {
   return (
@@ -33,12 +34,12 @@ const FinalCta = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-[15px]">
-              <button className="bg-[#f7941d] hover:bg-[#d67500] text-black font-semibold py-[12px] px-[24px] rounded-[4px] text-[15px] transition-colors duration-300 border-none cursor-pointer">
+              <Link href="/company/contact-us" className="bg-[#f7941d] hover:bg-[#d67500] text-black font-semibold py-[12px] px-[24px] text-[15px] transition-colors duration-300 border-none cursor-pointer">
                 Get Started
-              </button>
-              <button className="bg-[#f7941d] hover:bg-[#d67500] text-black font-semibold py-[12px] px-[24px] rounded-[4px] text-[15px] transition-colors duration-300 border-none cursor-pointer">
+              </Link>
+              <Link href="/company/contact-us" className="bg-[#f7941d] hover:bg-[#d67500] text-black font-semibold py-[12px] px-[24px] text-[15px] transition-colors duration-300 border-none cursor-pointer">
                 Talk to an expert
-              </button>
+              </Link>
             </div>
           </div>
         </div>

@@ -173,23 +173,12 @@ const ContactUs = () => {
                     <label htmlFor="source" className="block text-base text-black/90 mb-2">
                       What Service you are looking for?
                     </label>
-                    <div className="relative">
-                      <select 
-                        id="source" 
-                        className="w-full bg-transparent outline-none text-black appearance-none cursor-pointer py-1"
-                        defaultValue=""
-                      >
-                        <option value="" disabled hidden></option>
-                        <option value="search">Choose Service</option>
-                        <option value="social">Social Media</option>
-                        <option value="referral">Referral</option>
-                      </select>
-                      <div className="absolute right-0 top-1/2 transform -translate-y-1/2 pointer-events-none">
-                        <svg className="w-4 h-4 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
-                        </svg>
-                      </div>
-                    </div>
+                    <input 
+                      placeholder='Write your service'
+                      type="text" 
+                      id="service" 
+                      className="w-full bg-transparent outline-none text-black placeholder-gray-400"
+                    />
                   </div>
                 </div>
 
@@ -227,7 +216,7 @@ const ContactUs = () => {
                 </div>
                 <div className="ml-3 text-base">
                   <label htmlFor="privacy" className="text-black">
-                    Yes, I agree with Astex AI's <a href="#" className="text-[#e77d00] underline hover:text-black">Data Privacy</a> and <a href="#" className="text-[#e77d00] underline hover:text-black">Legal Notice</a>. <span className="text-[#e77d00]">*</span>
+                    Yes, I agree with Astex AI's <a href="#" className="text-[#e77d00] underline hover:text-black">Term's & condition</a> and <a href="#" className="text-[#e77d00] underline hover:text-black">Privacy policy</a>. <span className="text-[#e77d00]">*</span>
                   </label>
                 </div>
               </div>
@@ -252,7 +241,7 @@ const ContactUs = () => {
             <div className="mt-12 flex justify-center">
               <button 
                 type="submit" 
-                className="bg-black cursor-pointer text-white px-8 py-3 rounded-full text-md md:text-lg font-medium hover:bg-[#e77d00] transition-colors duration-300"
+                className="bg-[#e77d00] cursor-pointer text-white px-8 py-3 rounded-full text-md md:text-lg font-medium hover:bg-black transition-colors duration-300"
               >
                 Send message
               </button>

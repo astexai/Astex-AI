@@ -257,7 +257,7 @@ export default function AboutUs() {
                     <div className="relative w-full h-[200px] md:h-[400px] rounded-sm overflow-hidden group">
                         {/* Use a tech/team related image here */}
                         <img
-                            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop"
+                            src="/assets/about-us/about.png"
                             alt="Astex AI Team"
                             className="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-700"
                         />
@@ -486,7 +486,7 @@ export default function AboutUs() {
                     <div className="hidden md:block relative max-w-6xl mx-auto">
                         {/* Central Hub */}
                         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 w-[200px] h-[200px] bg-white rounded-full border-2 border-dashed border-[#e77d00] flex items-center justify-center shadow-xl">
-                            <h3 className="text-xl font-medium text-black text-center leading-tight">
+                            <h3 className="text-lg font-medium text-black text-center leading-tight">
                                 Partnership<br />Through the<br />Agent Lifecycle
                             </h3>
 

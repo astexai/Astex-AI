@@ -18,53 +18,53 @@ const XIcon = () => (
 // --- Data: Team Members ---
 const teamData = [
   {
-    name: "Lin Qiao",
-    role: "Co-Founder, CEO",
+    name: "Aditya Patel",
+    role: "Founder, CEO",
     prev: "Previously Head of PyTorch at Meta",
-    img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600&auto=format&fit=crop",
-    linkedin: "#",
-    x: "#"
+    img: "/assets/leadership/aditya.jpg",
+    linkedin: "https://www.linkedin.com/in/adityapatel09/",
+    x: null
   },
   {
-    name: "Benny Chen",
-    role: "Co-Founder",
+    name: "Shivani Rathore",
+    role: "Co-Founder, Coo",
     prev: "Previously Meta ads infra lead",
-    img: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=600&auto=format&fit=crop",
-    linkedin: "#",
-    x: "#"
+    img: "/assets/leadership/shivani.jpg",
+    linkedin: "https://www.linkedin.com/in/shivanirathore09/",
+    x: null
   },
   {
-    name: "Chenyu Zhao",
-    role: "Co-Founder",
+    name: "Priyanshu Prajapati",
+    role: "Marketing Head",
     prev: "Previously Google Vertex AI Lead",
-    img: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=600&auto=format&fit=crop",
+    img: "https://media.istockphoto.com/id/1223477625/vector/male-default-avatar-profile-icon-man-face-silhouette-person-placeholder-vector-illustration.jpg?s=612x612&w=0&k=20&c=cgdY9VecbVrLN_7Ak4ppGT082-I9zAV-Tt68pNimA94=",
     linkedin: "#",
-    x: "#" // Only LinkedIn shown in image for some, but added for structure
+    x: null // Only LinkedIn shown in image for some, but added for structure
   },
-  {
-    name: "Dmytro Dzhulgakov",
-    role: "Co-Founder",
-    prev: "Previously PyTorch core maintainer at Meta",
-    img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600&auto=format&fit=crop",
-    linkedin: "#",
-    x: "#"
-  },
-  {
-    name: "Dmytro Ivchenko",
-    role: "Co-Founder",
-    prev: "Previously PyTorch for ranking lead at Meta",
-    img: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=600&auto=format&fit=crop",
-    linkedin: "#",
-    x: null
-  },
-  {
-    name: "James Reed",
-    role: "Co-Founder",
-    prev: "Previously PyTorch compiler at Meta",
-    img: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=600&auto=format&fit=crop",
-    linkedin: "#",
-    x: null
-  },
+  // {
+  //   name: "Dmytro Dzhulgakov",
+  //   role: "Co-Founder",
+  //   prev: "Previously PyTorch core maintainer at Meta",
+  //   img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600&auto=format&fit=crop",
+  //   linkedin: "#",
+  //   x: null
+  // },
+  // {
+  //   name: "Dmytro Ivchenko",
+  //   role: "Co-Founder",
+  //   prev: "Previously PyTorch for ranking lead at Meta",
+  //   img: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=600&auto=format&fit=crop",
+  //   linkedin: "#",
+  //   x: null
+  // },
+  // {
+  //   name: "James Reed",
+  //   role: "Co-Founder",
+  //   prev: "Previously PyTorch compiler at Meta",
+  //   img: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=600&auto=format&fit=crop",
+  //   linkedin: "#",
+  //   x: null
+  // },
   // Add empty object if you want to fill the grid slot or leave blank
 ];
 
@@ -94,7 +94,7 @@ const Leadership = () => {
             Meet the Founding Team
           </h1>
           <p className="text-gray-500 text-md md:text-lg max-w-3xl mx-auto font-light px-6 md:px-0">
-            Bringing decades of AI experience from PyTorch, Meta and Google to unlock product innovation.
+            More than leaders — our founders are builders who believe in collaboration, curiosity, and continuous improvement.
           </p>
         </div>
 

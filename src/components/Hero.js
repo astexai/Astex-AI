@@ -1,5 +1,6 @@
 'use client';
 import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 const Hero = () => {
   // --- Typewriter State & Logic ---
@@ -66,15 +67,15 @@ const Hero = () => {
 
           {/* CTA Buttons - Centered on mobile, Start on Desktop */}
           <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-5 md:gap-7">
-            <button className="bg-[#e77d00] text-black px-8 py-4 text-[18px] font-semibold border-none cursor-pointer flex items-center gap-2.5 hover:opacity-90 transition-opacity rounded-md sm:rounded-none w-full sm:w-auto justify-center">
+            <Link href="/company/contact-us" className="bg-[#e77d00] text-black px-8 py-4 text-[18px] font-semibold border-none cursor-pointer flex items-center gap-2.5 hover:opacity-90 transition-opacity rounded-md sm:rounded-none w-full sm:w-auto justify-center">
               Get Started
               <svg viewBox="0 0 24 24" className="w-5 h-5 fill-black">
                 <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" />
               </svg>
-            </button>
-            <a href="#" className="text-[18px] text-black no-underline border-b border-transparent hover:border-black transition-colors">
+            </Link>
+            <Link href="/company/contact-us" className="text-[18px] text-black no-underline border-b border-transparent hover:border-black transition-colors">
               Talk to our team
-            </a>
+            </Link>
           </div>
         </div>
 

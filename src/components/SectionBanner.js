@@ -44,7 +44,7 @@ const SectionBanner = () => {
             
             {/* CTA Button */}
             <a 
-              href="#" 
+              href="/company/contact-us" 
               className="
                 group inline-flex items-center justify-center gap-3 
                 bg-[#f7941d] text-black 

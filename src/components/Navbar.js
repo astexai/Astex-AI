@@ -1,5 +1,6 @@
 'use client';
 import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -247,9 +248,9 @@ const Navbar = () => {
           </ul>
 
           {/* Desktop Contact Button */}
-          <button className="hidden lg:block bg-[#e77d00] text-[#111] px-7 py-3 text-lg font-semibold cursor-pointer hover:opacity-90 transition-opacity border-none rounded-[4px]">
+          <Link href="/company/contact-us" className="hidden lg:block bg-[#e77d00] text-[#111] px-7 py-3 text-lg font-semibold cursor-pointer hover:opacity-90 transition-opacity border-none rounded-[4px]">
             Contact Us
-          </button>
+          </Link>
 
           {/* Mobile Toggle */}
           <button 
@@ -440,9 +441,9 @@ const Navbar = () => {
           })}
           
           <li className="w-full text-center mt-8">
-            <button className="bg-[#e77d00] text-[#111] px-10 py-4 text-lg font-semibold cursor-pointer hover:opacity-90 transition-opacity border-none rounded-md w-full">
+            <Link href="/company/contact-us" className="bg-[#e77d00] text-[#111] px-10 py-4 text-lg font-semibold cursor-pointer hover:opacity-90 transition-opacity border-none rounded-md w-full">
               Contact Us
-            </button>
+            </Link>
           </li>
         </ul>
       </div>

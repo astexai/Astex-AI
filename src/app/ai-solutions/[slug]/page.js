@@ -5,6 +5,7 @@ import { useParams } from 'next/navigation';
 import { getAiSolutionBySlug } from '../AiSolutionsData';
 import Image from 'next/image';
 import GetInTouch from '@/components/GetInTouch';
+import Link from 'next/link';
 
 // --- Icons ---
 const Icons = {
@@ -91,9 +92,9 @@ const AiSolutionPage = () => {
                             <p className="text-[16px] md:text-[18px] text-[#4a4a4a] leading-relaxed mb-8">
                                 {solution.heroSubtitle}
                             </p>
-                            <button className="bg-[#e77d00] hover:bg-black text-white px-8 py-3.5 font-medium uppercase text-xs tracking-wider transition-colors duration-300">
+                            <Link href="/company/contact-us" className="bg-[#e77d00] hover:bg-black text-white px-8 py-3.5 font-medium uppercase text-xs tracking-wider transition-colors duration-300">
                                 Get in Touch
-                            </button>
+                            </Link>
                         </div>
 
                         {/* Hero Image/Icon */}

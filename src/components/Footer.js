@@ -10,9 +10,9 @@ const Footer = () => {
           <div className="text-[32px] font-medium text-white tracking-[-0.5px]">
             Astex<span className="text-[#f7941d]">ai</span>
           </div>
-          <button className="bg-[#f7941d] text-black px-[24px] py-[10px] font-semibold text-[14px] rounded-[4px] border-none cursor-pointer transition-opacity duration-300 hover:opacity-90">
+          <a href="tel:+919098343508" className="bg-[#f7941d] text-black px-[24px] py-[10px] font-semibold text-[14px] rounded-[4px] border-none cursor-pointer transition-opacity duration-300 hover:opacity-90">
             Call Now
-          </button>
+          </a>
         </div>
 
         {/* --- Main Grid: Offices & Links --- */}
@@ -33,11 +33,11 @@ const Footer = () => {
                 India Office
               </div>
               <div className="text-white leading-[1.6] mb-[5px]">
-                xx, Marimata Square<br />
+                Marimata Square<br />
                 Indore - 452015
               </div>
               <div className="text-white leading-[1.6] mt-[5px]">
-                info@astexai.in | +91 9098343508
+                contact.astexai@gmail.com | +91 9098343508
               </div>
             </div>
 
@@ -67,10 +67,11 @@ const Footer = () => {
             <ul className="flex flex-col gap-[12px]">
               {[
                 { name: 'About Us', url: '/company/about-us' },
-                { name: 'Testimonials', url: '/company/testimonials' },
-                { name: 'Team', url: '/company/team' },
-                { name: 'Contacts', url: '/company/contacts' },
-                { name: 'Case Studies', url: '/case-studies' }
+                // { name: 'Testimonials', url: '/company/testimonials' },
+                { name: 'Leadership', url: '/company/leadership' },
+                { name: 'Contacts', url: '/company/contact-us' },
+                { name: 'Case Studies', url: '/case-studies' },
+                { name: 'Blogs & Insights', url: '/company/blogs-and-insights' }
               ].map((item) => (
                 <li key={item.name}>
                   <a href={item.url} className="text-white font-light hover:text-[#f7941d] transition-colors duration-200 block">
@@ -83,21 +84,23 @@ const Footer = () => {
 
           {/* Column 3: Services (Center aligned on mobile) */}
           <div className="text-center sm:text-left">
-            <h4 className="text-[#f7941d] text-[18px] font-normal mb-[25px]">Services</h4>
+            <h4 className="text-[#f7941d] text-[18px] font-normal mb-[25px]">Industries</h4>
             <ul className="flex flex-col gap-[12px]">
               {[
-                { name: 'AI Agent Development', url: '/services/ai-agent-development' },
-                { name: 'Chatbot & Voicebots', url: '/services/chatbot-voicebots' },
-                { name: 'Workflow Automation Systems', url: '/services/workflow-automation' },
-                { name: 'CRM Process Automation', url: '/services/crm-automation' },
-                { name: 'Custom AI Products', url: '/services/custom-ai-products' },
-                { name: 'AI Copilot Solutions', url: '/services/ai-copilot' },
-                { name: 'API & Webhooks Integration', url: '/services/api-webhooks' }
+                 { name: "E-Commerce", url: "#" },
+            { name: "Travel & Hospitality", url: "#" },
+            { name: "Healthcare Clinics", url: "#" },
+            { name: "Real Estate", url: "#" },
+            { name: "Education Institutes", url: "#" },
+            { name: "SaaS Companies", url: "#" },
+            { name: "Marketing Agencies", url: "#" },
+            { name: "Restaurants & Cafes", url: "#" },
+            { name: "Logistics & Supply", url: "#" },
               ].map((item) => (
                 <li key={item.name}>
-                  <a href={item.url} className="text-white font-light hover:text-[#f7941d] transition-colors duration-200 block">
+                  <span  className="text-white font-light transition-colors duration-200 block">
                     {item.name}
-                  </a>
+                  </span>
                 </li>
               ))}
             </ul>
@@ -108,13 +111,15 @@ const Footer = () => {
             <h4 className="text-[#f7941d] text-[18px] font-normal mb-[25px]">AI Solutions</h4>
             <ul className="flex flex-col gap-[12px]">
               {[
-                { name: 'E-Commerce & D2C', url: '/ai-solutions/ecommerce-d2c' },
-                { name: 'Travel & Hospitality', url: '/ai-solutions/travel-hospitality' },
-                { name: 'Healthcare & Clinics', url: '/ai-solutions/healthcare' },
-                { name: 'Real Estate & Property', url: '/ai-solutions/real-estate' },
-                { name: 'Finance, Banking & FinTech', url: '/ai-solutions/finance' },
-                { name: 'SaaS & Software Companies', url: '/ai-solutions/saas' },
-                { name: 'Marketing Agencies', url: '/ai-solutions/marketing' }
+               { name: "E-Commerce & D2C", url: "/ai-solutions/e-commerce-d2c" },
+        { name: "Travel & Hospitality", url: "/ai-solutions/travel-hospitality" },
+        { name: "Healthcare & Clinics", url: "/ai-solutions/healthcare-clinics" },
+        { name: "Ed-Tech & Coaching Institutes", url: "/ai-solutions/ed-tech-coaching-institutes" },
+        { name: "Real Estate & Property", url: "/ai-solutions/real-estate-property" },
+        { name: "Finance, Banking & FinTech", url: "/ai-solutions/finance-banking-fintech" },
+        { name: "Restaurants & Cafes", url: "/ai-solutions/restaurants-cafes" },
+        { name: "SaaS & Software Companies", url: "/ai-solutions/saas-software-companies" },
+         { name: "Marketing Agencies & Service Businesses", url: "/ai-solutions/marketing-agencies-service-businesses" },
               ].map((item) => (
                 <li key={item.name}>
                   <a href={item.url} className="text-white font-light hover:text-[#f7941d] transition-colors duration-200 block">
@@ -129,7 +134,7 @@ const Footer = () => {
 
         {/* --- Industries Section --- */}
         <div className="mb-[60px]">
-          <h4 className="text-[#f7941d] text-[18px] mb-[25px] text-center sm:text-left">Industries</h4>
+          <h4 className="text-[#f7941d] text-[18px] mb-[25px] text-center sm:text-left">Services</h4>
           
           {/* Responsive Grid: 2 Cols on Mobile/Tablet, 4 Cols on Desktop */}
           <div className="grid grid-cols-2 lg:grid-cols-4 text-center md:text-left gap-[30px] md:gap-[40px]">
@@ -137,12 +142,14 @@ const Footer = () => {
             {/* Ind Col 1 */}
             <ul className="flex flex-col gap-[12px]">
               {[
-                { name: 'E-Commerce', url: '/industries/ecommerce' },
-                { name: 'Travel & Hospitality', url: '/industries/travel-hospitality' },
-                { name: 'Healthcare Clinics', url: '/industries/healthcare' },
-                { name: 'Real Estate', url: '/industries/real-estate' },
-                { name: 'Education Institutes', url: '/industries/education' },
-                { name: 'SaaS Companies', url: '/industries/saas' }
+                { name: "AI Agent Development", url: "/services/ai-agent-development" },
+            { name: "Chatbot & Voicebots", url: "/services/chatbot-voicebots" },
+            { name: "Workflow Automation Systems", url: "/services/workflow-automation-systems" },
+            { name: "WhatsApp Automation Tools", url: "/services/whatsapp-automation-tools" },
+            { name: "CRM Process Automation", url: "/services/crm-process-automation" },
+            { name: "Email Automation Flows", url: "/services/email-automation-flows" },
+            { name: "Data Insight Agents", url: "/services/data-insight-agents" },
+            { name: "Document QA Bots", url: "/services/document-qa-bots" }
               ].map((item) => (
                 <li key={item.name}>
                   <a href={item.url} className="text-white font-light hover:text-[#f7941d] transition-colors duration-200 block">
@@ -155,12 +162,13 @@ const Footer = () => {
             {/* Ind Col 2 */}
             <ul className="flex flex-col gap-[12px]">
                {[
-                { name: 'Marketing Agencies', url: '/industries/marketing-agencies' },
-                { name: 'Restaurants & Cafes', url: '/industries/restaurants' },
-                { name: 'Logistics & Supply', url: '/industries/logistics' },
-                { name: 'FinTech Services', url: '/industries/fintech' },
-                { name: 'Retail Stores', url: '/industries/retail' },
-                { name: 'Manufacturing Units', url: '/industries/manufacturing' }
+               { name: "Custom AI Products", url: "/services/custom-ai-products" },
+            { name: "Conversational AI Design", url: "/services/conversational-ai-design" },
+            { name: "Multi-Agent Workflows", url: "/services/multi-agent-workflows" },
+            { name: "Predictive Automation Tools", url: "/services/predictive-automation-tools" },
+            { name: "RAG Knowledge Assistants", url: "/services/rag-knowledge-assistants" },
+            { name: "AI Analytics Agents", url: "/services/ai-analytics-agents" },
+            { name: "Domain AI Solutions", url: "/services/domain-ai-solutions" }
               ].map((item) => (
                 <li key={item.name}>
                   <a href={item.url} className="text-white font-light hover:text-[#f7941d] transition-colors duration-200 block">
@@ -173,12 +181,14 @@ const Footer = () => {
             {/* Ind Col 3 */}
             <ul className="flex flex-col gap-[12px]">
                {[
-                { name: 'Event Management', url: '/industries/event-management' },
-                { name: 'Coaching Centers', url: '/industries/coaching' },
-                { name: 'HR & Staffing', url: '/industries/hr-staffing' },
-                { name: 'IT Services', url: '/industries/it-services' },
-                { name: 'Consulting Firms', url: '/industries/consulting' },
-                { name: 'Automobile Dealers', url: '/industries/automobile' }
+                { name: "API & Webhooks", url: "/services/api-and-webhooks" },
+            { name: "Automation Platform Integrations", url: "/services/automation-platform-integrations" },
+            { name: "CRM SaaS Integrations", url: "/services/crm-saas-integrations" },
+            { name: "Backend Data Automations", url: "/services/backend-data-automations" },
+            { name: "Lead Data Pipelines", url: "/services/lead-data-pipelines" },
+            { name: "Voice-to-CRM Sync", url: "/services/voice-to-crm-sync" },
+            { name: "Chatbot Data Sync", url: "/services/chatbot-data-sync" },
+            { name: "Dashboard Integrations", url: "/services/dashboard-integrations" }
               ].map((item) => (
                 <li key={item.name}>
                   <a href={item.url} className="text-white font-light hover:text-[#f7941d] transition-colors duration-200 block">
@@ -191,12 +201,11 @@ const Footer = () => {
             {/* Ind Col 4 */}
             <ul className="flex flex-col gap-[12px]">
                {[
-                { name: 'Fitness & Gyms', url: '/industries/fitness' },
-                { name: 'Legal Services', url: '/industries/legal' },
-                { name: 'Banking Support', url: '/industries/banking' },
-                { name: 'Insurance Services', url: '/industries/insurance' },
-                { name: 'Media & Creators', url: '/industries/media' },
-                { name: 'Startup Founders', url: '/industries/startups' }
+                { name: "Web App Development", url: "/services/web-app-development" },
+            { name: "SaaS Product Development", url: "/services/saas-product-development" },
+            { name: "Dashboard & Portals", url: "/services/dashboard-and-portals" },
+            { name: "Backend API Development", url: "/services/backend-api-development" },
+            { name: "Product Maintenance Support", url: "/services/product-maintenance-support" }
               ].map((item) => (
                 <li key={item.name}>
                   <a href={item.url} className="text-white font-light hover:text-[#f7941d] transition-colors duration-200 block">
@@ -212,7 +221,7 @@ const Footer = () => {
         {/* --- Bottom Bar --- */}
         <div className="border-t border-[#333] py-[25px] flex flex-col md:flex-row justify-between items-center text-[13px] text-white gap-[15px] md:gap-0 text-center md:text-left">
           <div>
-            &copy; 2025 Astex AI, All rights reserved.
+            &copy; 2026 Astex AI, All rights reserved.
           </div>
           <div className="flex gap-[20px]">
             <a href="/company/terms" className="text-white hover:text-[#f7941d] transition-colors">Terms & condition</a>

@@ -4,6 +4,8 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { getAllCaseStudies } from './CaseStudyData'; // Import Data
+import SectionBanner from '@/components/SectionBanner';
+import GetInTouch from '@/components/GetInTouch';
 
 // --- Icons ---
 const Icons = {
@@ -227,31 +229,9 @@ const CaseStudy = () => {
             </div>
         )}
 
-        {/* ================= CTA SECTION ================= */}
-        <div className="px-6 md:px-12 py-20 md:py-28 bg-[#1a1a1a] text-white text-center">
-            <h2 className="text-3xl md:text-5xl font-medium mb-6">
-                Ready to write your success story?
-            </h2>
-            <p className="text-gray-400 text-lg mb-10 max-w-2xl mx-auto">
-                Join the forward-thinking companies using our AI Agents to reduce costs and scale operations.
-            </p>
-            <div className="flex flex-col md:flex-row justify-center gap-6">
-                <Link 
-                    href="/company/contact-us"
-                    className="bg-[#e77d00] text-white px-10 py-4 uppercase text-sm font-bold tracking-widest hover:bg-white hover:text-black transition-all duration-300"
-                >
-                    Start Project
-                </Link>
-                <Link 
-                    href="/company/book-demo"
-                    className="border border-white text-white px-10 py-4 uppercase text-sm font-bold tracking-widest hover:bg-white hover:text-black transition-all duration-300"
-                >
-                    Book a Demo
-                </Link>
-            </div>
-        </div>
-
       </div>
+      <SectionBanner />
+      <GetInTouch />
     </section>
   );
 };
